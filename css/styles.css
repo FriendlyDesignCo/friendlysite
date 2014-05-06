@@ -115,10 +115,10 @@ a {
 
 /** Hero  **/
 .hero-container {
-  background-image: url("../images/imac.png");
   background-repeat: no-repeat;
   background-position: 100%;
-  background-size: 37%; }
+  background-size: 37%;
+  transition: all 2s; }
 
 .hero {
   margin: auto; }
