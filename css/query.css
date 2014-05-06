@@ -1,0 +1,374 @@
+/*  Syntax Quick Reference
+  --------------------------
+  column($ratios: 1, $offset: 0, $cycle: 0, $uncycle: 0, $gutter: $jeet-gutter)
+  span($ratio: 1, $offset: 0)
+  shift($ratios: 0, $col_or_span: column, $gutter: $jeet-gutter)
+  unshift()
+  edit()
+  center($max_width: 1410px, $pad: 0)
+  stack($pad: 0, $align: false)
+  unstack()
+  align($direction: both)
+  cf()
+*/
+@media all and (max-width: 600px) {
+  #global-header #header-logo img {
+    margin: -16px 0 0 0;
+    max-width: 90px; }
+
+  .service {
+    *zoom: 1;
+    width: auto;
+    max-width: 95%;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0; }
+    .service:before, .service:after {
+      content: '';
+      display: table; }
+    .service:after {
+      clear: both; }
+
+  .service h3 {
+    *zoom: 1;
+    width: auto;
+    max-width: 95%;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0; }
+    .service h3:before, .service h3:after {
+      content: '';
+      display: table; }
+    .service h3:after {
+      clear: both; }
+
+  .services, .process, .clientlogos, .processphoto {
+    *zoom: 1;
+    width: auto;
+    max-width: 95%;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0; }
+    .services:before, .services:after, .process:before, .process:after, .clientlogos:before, .clientlogos:after, .processphoto:before, .processphoto:after {
+      content: '';
+      display: table; }
+    .services:after, .process:after, .clientlogos:after, .processphoto:after {
+      clear: both; } }
+@media all and (min-width: 601px) and (max-width: 900px) {
+  #global-header #header-logo img {
+    margin: -16px 0 0 0;
+    max-width: 90px; }
+
+  .services, .process, .clients {
+    overflow: auto;
+    position: relative;
+    width: 100%;
+    float: left;
+    left: 0%;
+    right: 0%; }
+
+  #main .page-coverup {
+    overflow: hidden; }
+
+  /** Hero  **/
+  .hero {
+    margin: 10% auto 10% auto; }
+
+  .hero:first-child {
+    *zoom: 1;
+    width: auto;
+    max-width: 90%;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0; }
+    .hero:first-child:before, .hero:first-child:after {
+      content: '';
+      display: table; }
+    .hero:first-child:after {
+      clear: both; }
+
+  .herotext {
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 58.8%;
+    margin-left: 0%;
+    margin-right: 3%; }
+    .herotext:before, .herotext:after {
+      content: '';
+      display: table; }
+    .herotext:after {
+      clear: both; }
+    .herotext:last-child {
+      margin-right: 0%; }
+
+  .hero img {
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 38.2%;
+    margin-left: 0%;
+    margin-right: 3%;
+    width: 45%;
+    top: 0%;
+    position: absolute; }
+    .hero img:before, .hero img:after {
+      content: '';
+      display: table; }
+    .hero img:after {
+      clear: both; }
+    .hero img:last-child {
+      margin-right: 0%; }
+
+  /** Motto **/
+  .motto {
+    *zoom: 1;
+    width: auto;
+    max-width: 100%;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #f3f3f3; }
+    .motto:before, .motto:after {
+      content: '';
+      display: table; }
+    .motto:after {
+      clear: both; }
+
+  .motto * {
+    *zoom: 1;
+    width: auto;
+    max-width: 90%;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0; }
+    .motto *:before, .motto *:after {
+      content: '';
+      display: table; }
+    .motto *:after {
+      clear: both; }
+
+  /** Serices **/
+  .services {
+    margin-top: 100px;
+    *zoom: 1;
+    width: auto;
+    max-width: 90%;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0; }
+    .services:before, .services:after {
+      content: '';
+      display: table; }
+    .services:after {
+      clear: both; }
+
+  .service {
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 31.33333%;
+    margin-left: 0%;
+    margin-right: 3%; }
+    .service:before, .service:after {
+      content: '';
+      display: table; }
+    .service:after {
+      clear: both; }
+    .service:nth-child(3n) {
+      margin-right: 0%;
+      float: right; }
+
+  .service img {
+    *zoom: 1;
+    width: auto;
+    max-width: 100%;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 50%; }
+    .service img:before, .service img:after {
+      content: '';
+      display: table; }
+    .service img:after {
+      clear: both; }
+
+  /** process **/
+  .process {
+    margin-top: 100px;
+    *zoom: 1;
+    width: auto;
+    max-width: 90%;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0; }
+    .process:before, .process:after {
+      content: '';
+      display: table; }
+    .process:after {
+      clear: both; }
+
+  .processphoto {
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 31.33333%;
+    margin-left: 0%;
+    margin-right: 3%; }
+    .processphoto:before, .processphoto:after {
+      content: '';
+      display: table; }
+    .processphoto:after {
+      clear: both; }
+    .processphoto:nth-child(3n) {
+      margin-right: 0%;
+      float: right; }
+
+  .processphoto img {
+    *zoom: 1;
+    width: auto;
+    max-width: 100%;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0; }
+    .processphoto img:before, .processphoto img:after {
+      content: '';
+      display: table; }
+    .processphoto img:after {
+      clear: both; }
+
+  /** Clients **/
+  .clients {
+    margin-top: 100px;
+    *zoom: 1;
+    width: auto;
+    max-width: 100%;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #f3f3f3;
+    padding: 50px 0; }
+    .clients:before, .clients:after {
+      content: '';
+      display: table; }
+    .clients:after {
+      clear: both; }
+
+  .clientlogos {
+    *zoom: 1;
+    width: auto;
+    max-width: 90%;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0; }
+    .clientlogos:before, .clientlogos:after {
+      content: '';
+      display: table; }
+    .clientlogos:after {
+      clear: both; }
+
+  .clientlogos img {
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 17.6%;
+    margin-left: 0%;
+    margin-right: 3%; }
+    .clientlogos img:before, .clientlogos img:after {
+      content: '';
+      display: table; }
+    .clientlogos img:after {
+      clear: both; }
+    .clientlogos img:nth-child(5n) {
+      margin-right: 0%;
+      float: right; }
+
+  /** testimonial **/
+  .testimonial {
+    margin-top: 100px;
+    *zoom: 1;
+    width: auto;
+    max-width: 100%;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0; }
+    .testimonial:before, .testimonial:after {
+      content: '';
+      display: table; }
+    .testimonial:after {
+      clear: both; }
+
+  .testimonial * {
+    *zoom: 1;
+    width: auto;
+    max-width: 90%;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0; }
+    .testimonial *:before, .testimonial *:after {
+      content: '';
+      display: table; }
+    .testimonial *:after {
+      clear: both; } }
