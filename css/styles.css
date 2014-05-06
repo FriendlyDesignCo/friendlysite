@@ -114,27 +114,11 @@ a {
   margin-top: -35px; }
 
 /** Hero  **/
-.heroimage {
-  *zoom: 1;
-  float: left;
-  display: inline;
-  clear: none;
-  text-align: inherit;
-  padding-left: 0;
-  padding-right: 0;
-  width: 38.2%;
-  margin-left: 0%;
-  margin-right: 3%;
-  position: fixed;
-  z-index: 1;
-  overflow: auto; }
-  .heroimage:before, .heroimage:after {
-    content: '';
-    display: table; }
-  .heroimage:after {
-    clear: both; }
-  .heroimage:last-child {
-    margin-right: 0%; }
+.hero-container {
+  background-image: url("../images/imac.png");
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: 37%; }
 
 .hero {
   margin: auto; }
