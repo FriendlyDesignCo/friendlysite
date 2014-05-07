@@ -133,15 +133,14 @@ a{
 }
 
 /** Hero  **/
-.heroimage{
-	@include col(2/5);
-	position: fixed;
-	z-index: 1;
-	overflow: auto;
 
+
+.hero-container{
+	background-repeat: no-repeat;
+	background-position: 100%;
+	background-size: 37%;
+	transition: all 2s;
 }
-
-
 
 .hero {
 	margin: auto;
