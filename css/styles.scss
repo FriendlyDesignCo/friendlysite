@@ -135,14 +135,14 @@ a{
 /** Hero  **/
 
 .hero-container-container{
-	background: linear-gradient(to top, $green, $green 15%, #fff 15%, #fff);
+	background: linear-gradient(to top, $green, $green 50px, #fff 50px, #fff);
 	background-size: 100%, 50%;
 }
 
 
 .hero-container{
 	background-repeat: no-repeat;
-	background-position: 100%;
+	background-position: right bottom;
 	background-size: 37%;
 	transition: all 2s;
 }
@@ -184,7 +184,7 @@ a{
 .motto{
 	@include center(100%);
 	background-color: $green;
-	padding: 0 0 5%;
+	padding: 25px 0 75px;
 	
 }
 
