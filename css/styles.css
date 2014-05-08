@@ -114,9 +114,13 @@ a {
   margin-top: -35px; }
 
 /** Hero  **/
+.hero-container-container {
+  background: linear-gradient(to top, #51b748, #51b748 50px, white 50px, white);
+  background-size: 100%, 50%; }
+
 .hero-container {
   background-repeat: no-repeat;
-  background-position: 100%;
+  background-position: right bottom;
   background-size: 37%;
   transition: all 2s; }
 
@@ -188,7 +192,7 @@ a {
   padding-left: 0;
   padding-right: 0;
   background-color: #51b748;
-  padding: 75px 0; }
+  padding: 25px 0 75px; }
   .motto:before, .motto:after {
     content: '';
     display: table; }
