@@ -134,6 +134,11 @@ a{
 
 /** Hero  **/
 
+.hero-container-container{
+	background: linear-gradient(to top, $green, $green 15%, #fff 15%, #fff);
+	background-size: 100%, 50%;
+}
+
 
 .hero-container{
 	background-repeat: no-repeat;
@@ -179,7 +184,7 @@ a{
 .motto{
 	@include center(100%);
 	background-color: $green;
-	padding: 75px 0;
+	padding: 0 0 5%;
 	
 }
 
