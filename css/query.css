@@ -107,9 +107,9 @@
     text-align: inherit;
     padding-left: 0;
     padding-right: 0;
-    width: 58.8%;
+    width: 58%;
     margin-left: 0%;
-    margin-right: 3%; }
+    margin-right: 5%; }
     .herotext:before, .herotext:after {
       content: '';
       display: table; }
@@ -126,9 +126,9 @@
     text-align: inherit;
     padding-left: 0;
     padding-right: 0;
-    width: 38.2%;
+    width: 37%;
     margin-left: 0%;
-    margin-right: 3%;
+    margin-right: 5%;
     width: 45%;
     top: 0%;
     position: absolute; }
@@ -200,9 +200,9 @@
     text-align: inherit;
     padding-left: 0;
     padding-right: 0;
-    width: 31.33333%;
+    width: 30.0%;
     margin-left: 0%;
-    margin-right: 3%; }
+    margin-right: 5%; }
     .service:before, .service:after {
       content: '';
       display: table; }
@@ -255,9 +255,9 @@
     text-align: inherit;
     padding-left: 0;
     padding-right: 0;
-    width: 31.33333%;
+    width: 30.0%;
     margin-left: 0%;
-    margin-right: 3%; }
+    margin-right: 5%; }
     .processphoto:before, .processphoto:after {
       content: '';
       display: table; }
@@ -327,9 +327,9 @@
     text-align: inherit;
     padding-left: 0;
     padding-right: 0;
-    width: 17.6%;
+    width: 16%;
     margin-left: 0%;
-    margin-right: 3%; }
+    margin-right: 5%; }
     .clientlogos img:before, .clientlogos img:after {
       content: '';
       display: table; }

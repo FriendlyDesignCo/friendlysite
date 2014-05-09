@@ -8,7 +8,7 @@ $darkgreen: #00733B;
 $green: #51b748; 
 $blue: #2993D1;
 $grey: #f3f3f3;
-$width: 90%;
+$width: 75%;
 $smallwidth: 65%;
 $breathspace: 100px;
 $rightspace: 2em;
@@ -101,9 +101,9 @@ a{
 /* Button Styling */
 
 .button{
-	border: 2px solid $blue;
 	padding: $buttonsize $buttonsize*2;
-	color: $blue;
+	background-color: $blue;
+	color: #fff;
 	@extend %proxima;
 	text-decoration: none;
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -117,13 +117,13 @@ a{
 	left: 0;
 	transition: all 0.5s;
 
-	&:hover{
-		color: $green;
-		border-color: $green;
+	&:after{
+		padding-left: 2.5%;
+		font-size: 0.9em;
+		content: "▶";
+	}
 
-		top: -3px;
-		box-shadow: 0px 5px $green;
-		transition: all 0.5s;
+	&:hover{
 	}
 }
 
@@ -133,11 +133,11 @@ a{
 	@extend %proxima;
 }
 
-.services > h2, .process > h2, .via > h2{
+.services > h2, .process > h2, .via > h2, .clients > h2{
 	color: $green;
 }
 
-.services > h2, .process > h2, #global-footer h2 {
+.services > h2, .process > h2, .clients > h2, #global-footer h2 {
 	font-size: 2.125em;
 }
 
@@ -200,26 +200,22 @@ a{
 .motto{
 	@include center(100%);
 	background-color: $green;
-	padding: 25px 0 75px;
+	padding: 25px (100/2-$width/2) 75px (100/2-$width/2);
 	
 }
 
 
 .motto * {
-	width: $smallwidth;
-	@extend %right;
+
 }
 
 /** Serices **/
 .services{
 	margin-top: $breathspace;
-	width: $smallwidth;
-	@extend %left;
-	-moz-transition: 0.4s;
-	-o-transition: 0.4s;
-	-webkit-transition: 0.4s;
-	transition: 0.4s;
-
+	width: $width;
+	margin-left: auto;
+	margin-right: auto;
+	display: table;
 }
 
 .service{
@@ -231,15 +227,14 @@ a{
 	border-radius: 50%;
 	border: 5px solid $green;
 	box-sizing: border-box;
+	margin: 0;
 }
 
 .service a{
 	margin: 10px 0;
-	display: inline-block;
 
 	&:hover{
-		transition: all 0.25s;
-		opacity: 0.75;
+
 	}
 }
 
@@ -247,9 +242,10 @@ a{
 /** process **/
 .process{
 	margin-top: $breathspace;
-	width: $smallwidth;
-	@extend %left;
-
+	width: $width;
+	margin-left: auto;
+	margin-right: auto;
+	display: table;
 }
 
 .processphoto{
@@ -264,20 +260,18 @@ a{
 
 /** Clients **/
 .clients h2{
-	@include center($width);
 }
 
 .clients{
 	margin-top: $breathspace;
-	@include center(100%);
-	background-color: white;
-	padding: 100px 0;
-	@extend %fullwidth;
-	
+	width: $width;
+	margin-left: auto;
+	margin-right: auto;
+	display: table;
 }
 
 .clientlogos{
-	@include center($width);
+	display: table;
 }
 
 .clientlogos img { 
@@ -292,8 +286,7 @@ a{
 	@include center(100%);
 	background-color: $green;
 	padding: 60px 0;
-
-	
+	margin-top: $breathspace;
 }
 
 .testimonial * {
@@ -347,10 +340,8 @@ blockquote{
 }
 
 .biglink{
-	font-size: 3.6rem;
-	font-size: 3.5vw;
-	border-size: 5px;
-	border-width: 7px;
+	font-size: 2.6rem;
+	font-size: 2.5vw;
 	border-radius: 15px;
 	@extend %proxima;
 
@@ -363,6 +354,8 @@ blockquote{
 
 /*Colophon and Footer*/
 footer {
+	background-color: $green;
+
 	& a:hover{
 		text-decoration: none;
 		color: #fff;
@@ -370,10 +363,8 @@ footer {
 	}
 }
 #global-footer{
-	background-color: $green;
-	padding: 64px 32px;
-	font-size: 0.7em;
-
+	max-width: 1200px;
+	margin: 0 auto;
 
 	& p{
 	font-weight: normal;
@@ -389,7 +380,6 @@ footer {
 
 .hr-wrap{
 	@include center($width);
-	padding: 20px;
 }
 
 #global-footer hr {
@@ -403,7 +393,7 @@ footer {
 }
 
 .colophon .column{
-	@include col(1/2, $cycle: 2);
+	@include col(1/3, $cycle: 3);
 }
 
 .footer-meta{
