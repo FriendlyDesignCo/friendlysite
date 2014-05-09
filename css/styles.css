@@ -353,16 +353,16 @@ a {
   text-align: inherit;
   padding-left: 0;
   padding-right: 0;
-  width: 22.75%;
+  width: 17.6%;
   margin-left: 0%;
   margin-right: 3%;
-  padding: 10px 0; }
+  padding: 0px 0; }
   .clientlogos img:before, .clientlogos img:after {
     content: '';
     display: table; }
   .clientlogos img:after {
     clear: both; }
-  .clientlogos img:nth-child(4n) {
+  .clientlogos img:nth-child(5n) {
     margin-right: 0%;
     float: right; }
 
