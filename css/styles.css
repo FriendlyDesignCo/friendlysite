@@ -54,7 +54,7 @@ a {
 
 /* Button Styling */
 .button {
-  padding: 7.5px 12.5px;
+  padding: 2.5% 5%;
   background-color: #2993d1;
   color: #fff;
   text-decoration: none;
@@ -63,7 +63,7 @@ a {
   -moz-box-sizing: border-box;
   /* Firefox, other Gecko */
   box-sizing: border-box;
-  border-radius: 50em;
+  border-radius: 100em;
   position: relative;
   top: 0;
   left: 0;
@@ -192,7 +192,8 @@ h2, h3, .button {
   padding-right: 0;
   width: 30.0%;
   margin-left: 0%;
-  margin-right: 5%; }
+  margin-right: 5%;
+  text-align: center; }
   .service:before, .service:after {
     content: '';
     display: table; }
@@ -201,28 +202,29 @@ h2, h3, .button {
   .service:nth-child(3n) {
     margin-right: 0%;
     float: right; }
-
-.service img {
-  *zoom: 1;
-  width: auto;
-  max-width: 70%;
-  float: none;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 0;
-  padding-right: 0;
-  border-radius: 50%;
-  border: 5px solid #51b748;
-  box-sizing: border-box; }
-  .service img:before, .service img:after {
-    content: '';
-    display: table; }
-  .service img:after {
-    clear: both; }
-
-.service a {
-  margin: 10px auto; }
+  .service p, .service h3 {
+    text-align: left; }
+  .service a {
+    margin: 10px auto;
+    display: inline-block; }
+  .service img {
+    *zoom: 1;
+    width: auto;
+    max-width: 70%;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 50%;
+    border: 5px solid #51b748;
+    box-sizing: border-box; }
+    .service img:before, .service img:after {
+      content: '';
+      display: table; }
+    .service img:after {
+      clear: both; }
 
 /** process **/
 .process {
@@ -412,8 +414,7 @@ blockquote {
 
 .biglink {
   font-size: 2.6rem;
-  font-size: 2.5vw;
-  border-radius: 15px; }
+  font-size: 2.5vw; }
   .biglink:hover {
     box-shadow-size: 0px 10px; }
 
