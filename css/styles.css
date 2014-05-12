@@ -175,7 +175,7 @@ a {
 
 /** Serices **/
 .services {
-  margin-top: 100px;
+  margin-top: 150px;
   width: 75%;
   margin-left: auto;
   margin-right: auto;
@@ -204,7 +204,7 @@ a {
 .service img {
   *zoom: 1;
   width: auto;
-  max-width: 100%;
+  max-width: 70%;
   float: none;
   display: block;
   margin-right: auto;
@@ -213,8 +213,7 @@ a {
   padding-right: 0;
   border-radius: 50%;
   border: 5px solid #51b748;
-  box-sizing: border-box;
-  margin: 0; }
+  box-sizing: border-box; }
   .service img:before, .service img:after {
     content: '';
     display: table; }
@@ -222,11 +221,11 @@ a {
     clear: both; }
 
 .service a {
-  margin: 10px 0; }
+  margin: 10px auto; }
 
 /** process **/
 .process {
-  margin-top: 100px;
+  margin-top: 150px;
   width: 75%;
   margin-left: auto;
   margin-right: auto;
@@ -271,14 +270,38 @@ a {
 
 /** Clients **/
 .clients {
-  margin-top: 100px;
-  width: 75%;
-  margin-left: auto;
+  *zoom: 1;
+  width: auto;
+  max-width: 75%;
+  float: none;
+  display: block;
   margin-right: auto;
-  display: table; }
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 150px; }
+  .clients:before, .clients:after {
+    content: '';
+    display: table; }
+  .clients:after {
+    clear: both; }
 
 .clientlogos {
-  display: table; }
+  display: table;
+  *zoom: 1;
+  width: auto;
+  max-width: 90%;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0; }
+  .clientlogos:before, .clientlogos:after {
+    content: '';
+    display: table; }
+  .clientlogos:after {
+    clear: both; }
 
 .clientlogos img {
   *zoom: 1;
@@ -291,7 +314,7 @@ a {
   width: 16%;
   margin-left: 0%;
   margin-right: 5%;
-  padding: 0px 0; }
+  margin-bottom: -10px; }
   .clientlogos img:before, .clientlogos img:after {
     content: '';
     display: table; }
@@ -314,7 +337,7 @@ a {
   padding-right: 0;
   background-color: #51b748;
   padding: 60px 0;
-  margin-top: 100px; }
+  margin-top: 150px; }
   .testimonial:before, .testimonial:after {
     content: '';
     display: table; }
@@ -413,7 +436,7 @@ footer {
 .hr-wrap {
   *zoom: 1;
   width: auto;
-  max-width: 75%;
+  max-width: 100%;
   float: none;
   display: block;
   margin-right: auto;
@@ -487,3 +510,6 @@ footer {
     color: #51b748;
     text-decoration: none;
     margin-right: 20px; }
+
+.colophon a {
+  display: inline-block; }

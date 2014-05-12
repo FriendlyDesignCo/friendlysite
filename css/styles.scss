@@ -10,7 +10,7 @@ $blue: #2993D1;
 $grey: #f3f3f3;
 $width: 75%;
 $smallwidth: 65%;
-$breathspace: 100px;
+$breathspace: 150px;
 $rightspace: 2em;
 $buttonsize:5px;
 
@@ -26,24 +26,6 @@ $buttonsize:5px;
 	font-family: "ff-tisa-web-pro", "Chaparal Pro", Garamond, Georgia, Serif;
 	font-weight: normal;
 	
-}
-
-%left {
-	margin-left: (((100-$width)/2)*6);
-	position: relative;
-	 min-height: 100%; /* Set to minimum height so overflow doesn't get hidden */
-    overflow-y: hidden;	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
-	box-sizing: border-box;
-}
-
-%right {
-	margin-left: $rightspace;
-	position: relative;
-	 min-height: 100%; /* Set to minimum height so overflow doesn't get hidden */
-    overflow-y: hidden;	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
-	box-sizing: border-box;
 }
 
 %fullwidth {
@@ -211,6 +193,7 @@ a{
 
 /** Serices **/
 .services{
+
 	margin-top: $breathspace;
 	width: $width;
 	margin-left: auto;
@@ -223,15 +206,14 @@ a{
 }
 
 .service img{
-	@include center(100%);
+	@include center(70%);
 	border-radius: 50%;
 	border: 5px solid $green;
 	box-sizing: border-box;
-	margin: 0;
 }
 
 .service a{
-	margin: 10px 0;
+	margin: 10px auto;
 
 	&:hover{
 
@@ -263,20 +245,19 @@ a{
 }
 
 .clients{
+	@include center($width);
 	margin-top: $breathspace;
-	width: $width;
-	margin-left: auto;
-	margin-right: auto;
-	display: table;
 }
 
 .clientlogos{
 	display: table;
+	@include center(90%);
 }
 
 .clientlogos img { 
 	@include col(1/5, $cycle: 5);
-	padding: 0px 0
+	margin-bottom: -10px;
+
 }
 
 
@@ -376,10 +357,8 @@ footer {
 	}
 }
 
-
-
-.hr-wrap{
-	@include center($width);
+.hr-wrap {
+	@include center(100%);
 }
 
 #global-footer hr {
@@ -430,3 +409,6 @@ footer {
 	}
 }
 
+.colophon a {
+	display: inline-block;
+}

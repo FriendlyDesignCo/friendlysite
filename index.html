@@ -157,20 +157,21 @@
 
                     <!--Clients-->
                     <div class="clients">
-                        <h2>Join our community of incredible clients.</h2>
-                        <div class="clientlogos">
-                            <img src="./images/client-logos/world-bank.png">
-                            <img src="./images/client-logos/american-university.png">
-                            <img src="./images/client-logos/white-house.png">
-                            <img src="./images/client-logos/washington-post.png">
-                            <img src="./images/client-logos/aarp.png">
-                            <img src="./images/client-logos/wordpress.png">
-                            <img src="./images/client-logos/college-humor.png">
-                            <img src="./images/client-logos/hinge.png">
-                            <img src="./images/client-logos/israel-embassasy.png">
-                            <img src="./images/client-logos/childrens-hospital.png">
-                        </div>
+                        <h2>Join our community of incredible clients.</h2> 
                     </div>
+                    <div class="clientlogos">
+                        <img src="./images/client-logos/world-bank.png">
+                        <img src="./images/client-logos/american-university.png">
+                        <img src="./images/client-logos/white-house.png">
+                        <img src="./images/client-logos/washington-post.png">
+                        <img src="./images/client-logos/aarp.png">
+                        <img src="./images/client-logos/wordpress.png">
+                        <img src="./images/client-logos/college-humor.png">
+                        <img src="./images/client-logos/hinge.png">
+                        <img src="./images/client-logos/israel-embassasy.png">
+                        <img src="./images/client-logos/childrens-hospital.png">
+                    </div>
+                   
 
                     <!--testimonial-->
                     <div class="testimonial">
@@ -181,6 +182,28 @@
                             <h2 class="who">Joe Shmoe</h2>
                             <h3 class="where"> American University</h3> 
                         </div> 
+
+<ul class="example-orbit" data-orbit>
+  <li>
+    <img src="../assets/img/examples/satelite-orbit.jpg" alt="slide 1" />
+    <div class="orbit-caption">
+      Caption One.
+    </div>
+  </li>
+  <li class="active">
+    <img src="../assets/img/examples/andromeda-orbit.jpg" alt="slide 2" />
+    <div class="orbit-caption">
+      Caption Two.
+    </div>
+  </li>
+  <li>
+    <img src="../assets/img/examples/launch-orbit.jpg" alt="slide 3" />
+    <div class="orbit-caption">
+      Caption Three.
+    </div>
+  </li>
+</ul>
+
                     </div>
 
                     <!--CTA-->
@@ -194,6 +217,7 @@
         <footer>
             <div id="global-footer">
                 <div class="hr-wrap">
+                    <hr>
                     <img src="images/venn-outline.svg" />
                     <div class="colophon">
                         <h2>Colophon</h2>
@@ -240,6 +264,20 @@
     </script>
     <script src="js/index.js"></script>
     <script src="js/typed.js"></script>
+    <script src="js/foundation.js"></script>
+    <script src="js/foundation.orbit.js"></script>
+    <script type="text/javascript">
+        $(document).foundation({
+          orbit: {
+            animation: 'slide',
+            timer_speed: 1000,
+            pause_on_hover: true,
+            animation_speed: 500,
+            navigation_arrows: true,
+            bullets: false
+          }
+        });
+    </script>
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
