@@ -69,7 +69,7 @@ a {
   left: 0;
   transition: all 0.25s; }
   .button:hover {
-    padding: 7.5px 12.5px 17.5px;
+    border-bottom: 3px solid #00733b;
     background-color: #51b748; }
 
 /* Multi Selectors*/
@@ -205,15 +205,13 @@ h2, h3, .button {
 .service img {
   *zoom: 1;
   width: auto;
-  max-width: 70%;
+  max-width: 50%;
   float: none;
   display: block;
   margin-right: auto;
   margin-left: auto;
   padding-left: 0;
   padding-right: 0;
-  border-radius: 50%;
-  border: 5px solid #51b748;
   box-sizing: border-box; }
   .service img:before, .service img:after {
     content: '';

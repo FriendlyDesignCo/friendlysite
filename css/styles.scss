@@ -99,7 +99,7 @@ a{
 	transition: all 0.25s;
 
 	&:hover{
-		padding: $buttonsize*1.5 $buttonsize*2.5 $buttonsize*3.5;
+		border-bottom: 3px solid $darkgreen;
 		background-color: $green;
 	}
 }
@@ -205,9 +205,7 @@ h2, h3, .button{
 }
 
 .service img{
-	@include center(70%);
-	border-radius: 50%;
-	border: 5px solid $green;
+	@include center(50%);
 	box-sizing: border-box;
 }
 
