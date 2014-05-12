@@ -96,9 +96,11 @@ a{
 	position: relative;
 	top: 0;
 	left: 0;
-	transition: all 0.5s;
+	transition: all 0.25s;
 
 	&:hover{
+		padding: $buttonsize*1.5 $buttonsize*2.5 $buttonsize*3.5;
+		background-color: $green;
 	}
 }
 
@@ -122,8 +124,9 @@ h2, h3, .button{
 
 /** Logo **/
 .logo img{
-	width: 100%;
-	margin-top: -65px;
+	width: 80%;
+	margin-left: 37px;
+	margin-top: -45px;
 }
 
 /** Hero  **/
@@ -335,7 +338,7 @@ footer {
 
 	& a:hover{
 		text-decoration: none;
-		color: #fff;
+		color: #fff !important;
 		transition: 0.25s all;
 	}
 }
@@ -351,10 +354,14 @@ footer {
 	& a{
 		color: $darkgreen;
 	}
+		&hover{
+			color:white;
+		}
 }
 
 .hr-wrap {
 	@include center(100%);
+	padding-bottom: 20px;
 }
 
 .hr-wrap img{

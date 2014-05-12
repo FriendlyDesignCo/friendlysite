@@ -67,7 +67,10 @@ a {
   position: relative;
   top: 0;
   left: 0;
-  transition: all 0.5s; }
+  transition: all 0.25s; }
+  .button:hover {
+    padding: 7.5px 12.5px 17.5px;
+    background-color: #51b748; }
 
 /* Multi Selectors*/
 .services > h2, .process > h2, .via > h2, .clients > h2 {
@@ -81,8 +84,9 @@ h2, h3, .button {
 
 /** Logo **/
 .logo img {
-  width: 100%;
-  margin-top: -65px; }
+  width: 80%;
+  margin-left: 37px;
+  margin-top: -45px; }
 
 /** Hero  **/
 .hero-container-container {
@@ -418,7 +422,7 @@ footer {
   background-color: #51b748; }
   footer a:hover {
     text-decoration: none;
-    color: #fff;
+    color: #fff !important;
     transition: 0.25s all; }
 
 #global-footer {
@@ -429,6 +433,8 @@ footer {
     text-transform: none; }
   #global-footer a {
     color: #00733b; }
+  #global-footerhover {
+    color: white; }
 
 .hr-wrap {
   *zoom: 1;
@@ -439,7 +445,8 @@ footer {
   margin-right: auto;
   margin-left: auto;
   padding-left: 0;
-  padding-right: 0; }
+  padding-right: 0;
+  padding-bottom: 20px; }
   .hr-wrap:before, .hr-wrap:after {
     content: '';
     display: table; }
