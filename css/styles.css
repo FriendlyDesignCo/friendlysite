@@ -202,32 +202,12 @@ h2, h3, .button {
   .service:nth-child(3n) {
     margin-right: 0%;
     float: right; }
-<<<<<<< HEAD
-  .service p, .service h3 {
-    text-align: left; }
-  .service a {
-    margin: 10px auto;
-    display: inline-block; }
-  .service img {
-    *zoom: 1;
-    width: auto;
-    max-width: 70%;
-    float: none;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 0;
-    padding-right: 0;
-    border-radius: 50%;
-    border: 5px solid #51b748;
-    box-sizing: border-box; }
-    .service img:before, .service img:after {
-      content: '';
-      display: table; }
-    .service img:after {
-      clear: both; }
-=======
 
+.service p, .service h3 {
+  text-align: left; }
+.service a {
+  margin: 10px auto;
+  display: inline-block; }
 .service img {
   *zoom: 1;
   width: auto;
@@ -244,10 +224,6 @@ h2, h3, .button {
     display: table; }
   .service img:after {
     clear: both; }
-
-.service a {
-  margin: 10px auto; }
->>>>>>> FETCH_HEAD
 
 /** process **/
 .process {
