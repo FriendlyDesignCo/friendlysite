@@ -98,7 +98,7 @@ a{
 	transition: all 0.25s;
 
 	&:hover{
-		border-bottom: 3px solid $darkgreen;
+		box-shadow: 0 3px 0 $darkgreen;
 		background-color: $green;
 	}
 }
