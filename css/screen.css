@@ -539,10 +539,10 @@ body {
 
 /* line 6, ../sass/_main.scss */
 #main {
-  max-width: 1200px;
+  max-width: 1240px;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 60px 1px 20px 1px;
+  padding: 60px 20px 20px 20px;
   overflow: hidden;
   -webkit-transition-property: background;
   -moz-transition-property: background;

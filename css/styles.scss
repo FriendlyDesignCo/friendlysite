@@ -83,7 +83,7 @@ a{
 /* Button Styling */
 
 .button{
-	padding: $buttonsize*1.5 $buttonsize*2.5;
+	padding: 2.5% 5%;
 	background-color: $blue;
 	color: #fff;
 	@extend %proxima;
@@ -91,13 +91,16 @@ a{
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box;
-	border-radius: 50em;
-
+	border-radius: 100em;
 	position: relative;
 	top: 0;
 	left: 0;
+<<<<<<< HEAD
 	transition: all 0.25s;
 
+=======
+	transition: all 0.5s;
+>>>>>>> rn-trello-edits
 	&:hover{
 		border-bottom: 3px solid $darkgreen;
 		background-color: $green;
@@ -202,20 +205,34 @@ h2, h3, .button{
 
 .service{
 	@include col(1/3, $cycle: 3);
+<<<<<<< HEAD
+	text-align: center;
+=======
 }
 
 .service img{
 	@include center(50%);
 	box-sizing: border-box;
 }
+>>>>>>> FETCH_HEAD
 
-.service a{
-	margin: 10px auto;
+	& p, h3{
+		text-align: left;
+	}
 
-	&:hover{
+	& a{
+		margin: 10px auto;
+		display: inline-block;
+	}
 
+	& img{
+		@include center(70%);
+		border-radius: 50%;
+		border: 5px solid $green;
+		box-sizing: border-box;
 	}
 }
+
 
 
 /** process **/
@@ -320,7 +337,6 @@ blockquote{
 .biglink{
 	font-size: 2.6rem;
 	font-size: 2.5vw;
-	border-radius: 15px;
 	@extend %proxima;
 
 	&:hover{
