@@ -83,7 +83,7 @@ a{
 /* Button Styling */
 
 .button{
-	padding: $buttonsize*2 $buttonsize*2;
+	padding: $buttonsize*1.5 $buttonsize*2.5;
 	background-color: $blue;
 	color: #fff;
 	@extend %proxima;
@@ -91,8 +91,7 @@ a{
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box;
-	padding: 2.5%;
-	border-radius: 30px;
+	border-radius: 50em;
 
 	position: relative;
 	top: 0;
@@ -117,6 +116,9 @@ a{
 	font-size: 2.125em;
 }
 
+h2, h3, .button{
+	text-align: center;
+}
 
 /** Logo **/
 .logo img{
@@ -355,10 +357,18 @@ footer {
 	@include center(100%);
 }
 
+.hr-wrap img{
+	@include center(100%);
+	width: 100px;
+	margin-top: -41px;
+}
+
 #global-footer hr {
   border-top: 1px solid #00733b;
   border-bottom: none;
-  margin: 20px auto 10px auto;
+  border-right: none;
+  border-left: none;
+  margin: 50px auto 10px auto;
 }
 
 .colophon {
@@ -374,9 +384,12 @@ footer {
 	color: $green;
 	@extend %proxima;
 	padding: 10px 32px;
+	@include center(100%);
 
 	.inner {
-		@include center($width);
+		@include center(100%);
+		max-width: 1200px;
+
 	}
 
 	nav ul {
@@ -403,6 +416,3 @@ footer {
 	}
 }
 
-.colophon a {
-	display: inline-block;
-}

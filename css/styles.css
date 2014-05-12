@@ -54,7 +54,7 @@ a {
 
 /* Button Styling */
 .button {
-  padding: 10px 10px;
+  padding: 7.5px 12.5px;
   background-color: #2993d1;
   color: #fff;
   text-decoration: none;
@@ -63,8 +63,7 @@ a {
   -moz-box-sizing: border-box;
   /* Firefox, other Gecko */
   box-sizing: border-box;
-  padding: 2.5%;
-  border-radius: 30px;
+  border-radius: 50em;
   position: relative;
   top: 0;
   left: 0;
@@ -76,6 +75,9 @@ a {
 
 .services > h2, .process > h2, .clients > h2, #global-footer h2 {
   font-size: 2.125em; }
+
+h2, h3, .button {
+  text-align: center; }
 
 /** Logo **/
 .logo img {
@@ -444,10 +446,30 @@ footer {
   .hr-wrap:after {
     clear: both; }
 
+.hr-wrap img {
+  *zoom: 1;
+  width: auto;
+  max-width: 100%;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100px;
+  margin-top: -41px; }
+  .hr-wrap img:before, .hr-wrap img:after {
+    content: '';
+    display: table; }
+  .hr-wrap img:after {
+    clear: both; }
+
 #global-footer hr {
   border-top: 1px solid #00733b;
   border-bottom: none;
-  margin: 20px auto 10px auto; }
+  border-right: none;
+  border-left: none;
+  margin: 50px auto 10px auto; }
 
 .colophon {
   color: #00733b; }
@@ -475,17 +497,32 @@ footer {
 .footer-meta {
   background-color: #00733b;
   color: #51b748;
-  padding: 10px 32px; }
+  padding: 10px 32px;
+  *zoom: 1;
+  width: auto;
+  max-width: 100%;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0; }
+  .footer-meta:before, .footer-meta:after {
+    content: '';
+    display: table; }
+  .footer-meta:after {
+    clear: both; }
   .footer-meta .inner {
     *zoom: 1;
     width: auto;
-    max-width: 75%;
+    max-width: 100%;
     float: none;
     display: block;
     margin-right: auto;
     margin-left: auto;
     padding-left: 0;
-    padding-right: 0; }
+    padding-right: 0;
+    max-width: 1200px; }
     .footer-meta .inner:before, .footer-meta .inner:after {
       content: '';
       display: table; }
@@ -505,6 +542,3 @@ footer {
     color: #51b748;
     text-decoration: none;
     margin-right: 20px; }
-
-.colophon a {
-  display: inline-block; }
