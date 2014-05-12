@@ -83,7 +83,7 @@ a{
 /* Button Styling */
 
 .button{
-	padding: $buttonsize $buttonsize*2;
+	padding: $buttonsize*2 $buttonsize*2;
 	background-color: $blue;
 	color: #fff;
 	@extend %proxima;
@@ -92,18 +92,12 @@ a{
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box;
 	padding: 2.5%;
-	border-radius: 5px;
+	border-radius: 30px;
 
 	position: relative;
 	top: 0;
 	left: 0;
 	transition: all 0.5s;
-
-	&:after{
-		padding-left: 2.5%;
-		font-size: 0.9em;
-		content: "▶";
-	}
 
 	&:hover{
 	}
