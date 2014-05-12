@@ -69,7 +69,7 @@ a {
   left: 0;
   transition: all 0.25s; }
   .button:hover {
-    padding: 7.5px 12.5px 17.5px;
+    border-bottom: 3px solid #00733b;
     background-color: #51b748; }
 
 /* Multi Selectors*/
@@ -202,6 +202,7 @@ h2, h3, .button {
   .service:nth-child(3n) {
     margin-right: 0%;
     float: right; }
+<<<<<<< HEAD
   .service p, .service h3 {
     text-align: left; }
   .service a {
@@ -225,6 +226,28 @@ h2, h3, .button {
       display: table; }
     .service img:after {
       clear: both; }
+=======
+
+.service img {
+  *zoom: 1;
+  width: auto;
+  max-width: 50%;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  box-sizing: border-box; }
+  .service img:before, .service img:after {
+    content: '';
+    display: table; }
+  .service img:after {
+    clear: both; }
+
+.service a {
+  margin: 10px auto; }
+>>>>>>> FETCH_HEAD
 
 /** process **/
 .process {
