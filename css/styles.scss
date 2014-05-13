@@ -149,6 +149,7 @@ h2, h3, .button{
 
 .hero:first-child{
 	@include center($width);
+	height: 45vw;
 }
 .herotext{
 	@include col(3/5);
@@ -164,7 +165,7 @@ h2, h3, .button{
 	color: $green;
 	@extend %proxima;
 	margin: 0 0;
-	padding-top: 20px;
+	padding-top: 50px;
 }
 
 .noun{
@@ -172,7 +173,8 @@ h2, h3, .button{
 	font-size: 12vw;
 	color: $blue;
 	@extend %proxima;
-	margin: -20px 0 0 0;
+	margin: -40px 0 0 0;
+	margin: -3vw 0 0 0;
 	padding-bottom: 10px;
 }
 
@@ -364,7 +366,8 @@ footer {
 
 .hr-wrap {
 	@include center(100%);
-	padding-bottom: 20px;
+	max-width: 1240px;
+	padding: 0px 20px 20px 20px;
 }
 
 .hr-wrap img{
@@ -399,6 +402,7 @@ footer {
 	.inner {
 		@include center(100%);
 		max-width: 1200px;
+		padding: 0px 20px 0px 20px;
 
 	}
 
