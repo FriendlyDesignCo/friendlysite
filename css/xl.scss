@@ -1,0 +1,18 @@
+@import 'jeet/index';
+
+$break-xl: 1200px;
+
+@media (min-width: $break-xl) {
+	.create{
+		font-size: 4.5em;
+	}
+
+	.noun{
+		font-size: 9em;
+	}
+
+	.bigLink{
+		font-size: 1.85em;
+	}
+
+}
