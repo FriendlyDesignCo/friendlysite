@@ -13,54 +13,48 @@
 */
 /* Variables */
 @media all and (max-width: 759px) {
-  #global-header #header-logo img {
-    margin: -16px 0 0 0;
-    max-width: 90px; }
+  .motto {
+    padding: 0px 3.75% 45px 3.75%; }
+    .motto h2 {
+      font-size: 1.5em; }
 
-  .service {
-    *zoom: 1;
-    width: auto;
-    max-width: 95%;
-    float: none;
+  .service, .processphoto, .colophon .column {
     display: block;
-    margin-right: auto;
+    clear: both;
+    float: none;
+    width: 100%;
     margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+    .service:first-child, .processphoto:first-child, .colophon .column:first-child {
+      margin-left: auto; }
+    .service:last-child, .processphoto:last-child, .colophon .column:last-child {
+      margin-right: auto; }
+    .service:nth-of-type(2), .service:nth-of-type(3), .processphoto:nth-of-type(2), .processphoto:nth-of-type(3), .colophon .column:nth-of-type(2), .colophon .column:nth-of-type(3) {
+      padding-top: 25px; }
+
+  .clientlogos img {
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
     padding-left: 0;
-    padding-right: 0; }
-    .service:before, .service:after {
+    padding-right: 0;
+    width: 47.5%;
+    margin-left: 0%;
+    margin-right: 5%;
+    margin-bottom: -10px; }
+    .clientlogos img:before, .clientlogos img:after {
       content: '';
       display: table; }
-    .service:after {
+    .clientlogos img:after {
       clear: both; }
-
-  .service h3 {
-    *zoom: 1;
-    width: auto;
-    max-width: 95%;
-    float: none;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 0;
-    padding-right: 0; }
-    .service h3:before, .service h3:after {
-      content: '';
-      display: table; }
-    .service h3:after {
-      clear: both; }
-
-  .services, .process, .clientlogos, .processphoto {
-    *zoom: 1;
-    width: auto;
-    max-width: 95%;
-    float: none;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 0;
-    padding-right: 0; }
-    .services:before, .services:after, .process:before, .process:after, .clientlogos:before, .clientlogos:after, .processphoto:before, .processphoto:after {
-      content: '';
-      display: table; }
-    .services:after, .process:after, .clientlogos:after, .processphoto:after {
-      clear: both; } }
+    .clientlogos img:nth-child(5n) {
+      margin-right: 5%;
+      float: left; }
+    .clientlogos img:nth-child(2n) {
+      margin-right: 0%;
+      float: right; }
+  .clientlogos img:nth-child(n+7) {
+    display: none; } }
