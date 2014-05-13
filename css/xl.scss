@@ -1,6 +1,6 @@
 @import 'jeet/index';
 
-$break-xl: 1200px;
+$break-xl: 1240px;
 
 @media (min-width: $break-xl) {
 	.create{
@@ -13,6 +13,10 @@ $break-xl: 1200px;
 
 	.bigLink{
 		font-size: 1.85em;
+	}
+
+	.hr-wrap {
+		padding: 0px;
 	}
 
 }

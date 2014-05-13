@@ -11,7 +11,7 @@
   align($direction: both)
   cf()
 */
-@media (min-width: 1200px) {
+@media (min-width: 1240px) {
   .create {
     font-size: 4.5em; }
 
@@ -19,4 +19,7 @@
     font-size: 9em; }
 
   .bigLink {
-    font-size: 1.85em; } }
+    font-size: 1.85em; }
+
+  .hr-wrap {
+    padding: 0px; } }

@@ -446,7 +446,8 @@ footer {
   margin-left: auto;
   padding-left: 0;
   padding-right: 0;
-  padding-bottom: 20px; }
+  max-width: 1240px;
+  padding: 0px 20px 20px 20px; }
   .hr-wrap:before, .hr-wrap:after {
     content: '';
     display: table; }
@@ -529,7 +530,8 @@ footer {
     margin-left: auto;
     padding-left: 0;
     padding-right: 0;
-    max-width: 1200px; }
+    max-width: 1200px;
+    padding: 0px 20px 0px 20px; }
     .footer-meta .inner:before, .footer-meta .inner:after {
       content: '';
       display: table; }
