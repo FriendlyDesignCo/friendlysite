@@ -51,9 +51,11 @@
       display: table; }
     .clientlogos img:after {
       clear: both; }
+    .clientlogos img:nth-child(5n) {
+      margin-right: 5%;
+      float: left; }
     .clientlogos img:nth-child(3n) {
       margin-right: 0%;
       float: right; }
-
   .clientlogos img:last-child {
     display: none; } }

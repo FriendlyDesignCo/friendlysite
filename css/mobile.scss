@@ -9,6 +9,7 @@ $green: #51b748;
 $blue: #2993D1;
 $grey: #f3f3f3;
 $width: 75%;
+$tablet-width: 92.5%;
 $smallwidth: 65%;
 $breathspace: 150px;
 $rightspace: 2em;
@@ -19,20 +20,31 @@ $break-mobile: $break-tablet - 1;
 
 @media all and (max-width: $break-mobile){
 
-	#global-header #header-logo img {
-		margin: -16px 0 0 0;
-		max-width: 90px;
+	.motto {
+		padding: 0px (100/2-$tablet-width/2) 45px (100/2-$tablet-width/2);
+
+		& h2 {
+			font-size: 1.5em;
+		}	
+	}
+	.service, .processphoto, .colophon .column {
+		@include stack();
+		text-align: center;
+		&:nth-of-type(2), &:nth-of-type(3){
+			padding-top: 25px;
+		}
 	}
 
-	.service{
-		@include center(95%);	
-	}
+	.clientlogos{
+		& img { 
+			@include col(1/2, $uncycle:5, $cycle: 2);
+			margin-bottom: -10px;
+		}
 
-	.service h3,{
-		@include center(95%);
-	}
-	.services, .process, .clientlogos, .processphoto{
-		@include center(95%);
+		& img:nth-child(n+7){
+				display: none;
+		}
+
 	}
 
 	

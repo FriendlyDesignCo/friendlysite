@@ -22,4 +22,7 @@
     font-size: 1.85em; }
 
   .hr-wrap {
-    padding: 0px; } }
+    padding: 0px; }
+
+  .hero:first-child {
+    height: 34.85em; } }

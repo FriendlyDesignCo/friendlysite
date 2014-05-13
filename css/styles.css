@@ -111,7 +111,8 @@ h2, h3, .button {
   margin-right: auto;
   margin-left: auto;
   padding-left: 0;
-  padding-right: 0; }
+  padding-right: 0;
+  height: 45vw; }
   .hero:first-child:before, .hero:first-child:after {
     content: '';
     display: table; }
@@ -153,6 +154,7 @@ h2, h3, .button {
   font-size: 12vw;
   color: #2993d1;
   margin: -40px 0 0 0;
+  margin: -3vw 0 0 0;
   padding-bottom: 10px; }
 
 /** Motto **/
