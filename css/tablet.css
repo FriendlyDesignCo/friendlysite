@@ -1,0 +1,59 @@
+/*  Syntax Quick Reference
+  --------------------------
+  column($ratios: 1, $offset: 0, $cycle: 0, $uncycle: 0, $gutter: $jeet-gutter)
+  span($ratio: 1, $offset: 0)
+  shift($ratios: 0, $col_or_span: column, $gutter: $jeet-gutter)
+  unshift()
+  edit()
+  center($max_width: 1410px, $pad: 0)
+  stack($pad: 0, $align: false)
+  unstack()
+  align($direction: both)
+  cf()
+*/
+/* Variables */
+@media all and (min-width: 760px) and (max-width: 900px) {
+  .motto:first-child, .services, .process {
+    *zoom: 1;
+    width: auto;
+    max-width: 92.5%;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0; }
+    .motto:first-child:before, .motto:first-child:after, .services:before, .services:after, .process:before, .process:after {
+      content: '';
+      display: table; }
+    .motto:first-child:after, .services:after, .process:after {
+      clear: both; }
+
+  .motto {
+    padding: 0px 3.75% 45px 3.75%; }
+    .motto h2 {
+      font-size: 1.5em; }
+
+  .clientlogos img {
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 30.0%;
+    margin-left: 0%;
+    margin-right: 5%;
+    margin-bottom: -10px; }
+    .clientlogos img:before, .clientlogos img:after {
+      content: '';
+      display: table; }
+    .clientlogos img:after {
+      clear: both; }
+    .clientlogos img:nth-child(3n) {
+      margin-right: 0%;
+      float: right; }
+
+  .clientlogos img:last-child {
+    display: none; } }
