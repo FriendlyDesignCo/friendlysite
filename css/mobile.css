@@ -1,0 +1,66 @@
+/*  Syntax Quick Reference
+  --------------------------
+  column($ratios: 1, $offset: 0, $cycle: 0, $uncycle: 0, $gutter: $jeet-gutter)
+  span($ratio: 1, $offset: 0)
+  shift($ratios: 0, $col_or_span: column, $gutter: $jeet-gutter)
+  unshift()
+  edit()
+  center($max_width: 1410px, $pad: 0)
+  stack($pad: 0, $align: false)
+  unstack()
+  align($direction: both)
+  cf()
+*/
+/* Variables */
+@media all and (max-width: 759px) {
+  #global-header #header-logo img {
+    margin: -16px 0 0 0;
+    max-width: 90px; }
+
+  .service {
+    *zoom: 1;
+    width: auto;
+    max-width: 95%;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0; }
+    .service:before, .service:after {
+      content: '';
+      display: table; }
+    .service:after {
+      clear: both; }
+
+  .service h3 {
+    *zoom: 1;
+    width: auto;
+    max-width: 95%;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0; }
+    .service h3:before, .service h3:after {
+      content: '';
+      display: table; }
+    .service h3:after {
+      clear: both; }
+
+  .services, .process, .clientlogos, .processphoto {
+    *zoom: 1;
+    width: auto;
+    max-width: 95%;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0; }
+    .services:before, .services:after, .process:before, .process:after, .clientlogos:before, .clientlogos:after, .processphoto:before, .processphoto:after {
+      content: '';
+      display: table; }
+    .services:after, .process:after, .clientlogos:after, .processphoto:after {
+      clear: both; } }

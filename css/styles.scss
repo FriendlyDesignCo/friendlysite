@@ -364,7 +364,8 @@ footer {
 
 .hr-wrap {
 	@include center(100%);
-	padding-bottom: 20px;
+	max-width: 1240px;
+	padding: 0px 20px 20px 20px;
 }
 
 .hr-wrap img{
@@ -399,6 +400,7 @@ footer {
 	.inner {
 		@include center(100%);
 		max-width: 1200px;
+		padding: 0px 20px 0px 20px;
 
 	}
 
