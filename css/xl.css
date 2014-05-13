@@ -1,0 +1,22 @@
+/*  Syntax Quick Reference
+  --------------------------
+  column($ratios: 1, $offset: 0, $cycle: 0, $uncycle: 0, $gutter: $jeet-gutter)
+  span($ratio: 1, $offset: 0)
+  shift($ratios: 0, $col_or_span: column, $gutter: $jeet-gutter)
+  unshift()
+  edit()
+  center($max_width: 1410px, $pad: 0)
+  stack($pad: 0, $align: false)
+  unstack()
+  align($direction: both)
+  cf()
+*/
+@media (min-width: 1200px) {
+  .create {
+    font-size: 4.5em; }
+
+  .noun {
+    font-size: 9em; }
+
+  .bigLink {
+    font-size: 1.85em; } }

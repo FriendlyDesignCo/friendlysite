@@ -69,7 +69,7 @@ a {
   left: 0;
   transition: all 0.25s; }
   .button:hover {
-    border-bottom: 3px solid #00733b;
+    box-shadow: 0 3px 0 #00733b;
     background-color: #51b748; }
 
 /* Multi Selectors*/
@@ -146,13 +146,13 @@ h2, h3, .button {
   font-size: 6vw;
   color: #51b748;
   margin: 0 0;
-  padding-top: 20px; }
+  padding-top: 50px; }
 
 .noun {
   font-size: 9rem;
   font-size: 12vw;
   color: #2993d1;
-  margin: -20px 0 0 0;
+  margin: -40px 0 0 0;
   padding-bottom: 10px; }
 
 /** Motto **/
@@ -203,7 +203,7 @@ h2, h3, .button {
     margin-right: 0%;
     float: right; }
 
-.service p, .service h3 {
+.service p {
   text-align: left; }
 .service a {
   margin: 10px auto;
