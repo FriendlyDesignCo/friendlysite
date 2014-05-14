@@ -28,25 +28,46 @@
     .service:last-child, .processphoto:last-child, .colophon .column:last-child {
       margin-right: auto; }
     .service:nth-of-type(2), .service:nth-of-type(3), .processphoto:nth-of-type(2), .processphoto:nth-of-type(3), .colophon .column:nth-of-type(2), .colophon .column:nth-of-type(3) {
-      padding-top: 25px; }
+      padding-top: 50px; }
 
   /**NAVIGATION**/
+  .logo {
+    padding: 0 0px !important; }
+    .logo img {
+      width: 95%;
+      margin: 0 auto;
+      padding: 0;
+      max-height: 115px; }
+
   #main-navigation ul {
-    display: flex; }
-  #main-navigation li:first-child {
-    order: 3; }
-  #main-navigation li:nth-of-type(2) {
-    order: 1; }
-  #main-navigation li:nth-of-type(3) {
-    order: 2; }
-  #main-navigation li:nth-of-type(4) {
-    order: 4; }
-  #main-navigation li:nth-of-type(5) {
-    order: 5; }
-  #main-navigation li:nth-of-type(2), #main-navigation li:nth-of-type(3) {
-    outline: red dashed 1px; }
-  #main-navigation li:nth-of-type(4), #main-navigation li:nth-of-type(5) {
-    outline: blue dashed 1px; }
+    display: flex;
+    align-items: center; }
+  #main-navigation li:nth-child(2) {
+    margin-left: 0px; }
+  #main-navigation li {
+    /*useful for debugging */
+    			/** &:nth-of-type(2), &:nth-of-type(3){
+    				outline:red dashed 1px;
+    			}
+    
+    			&:nth-of-type(4), &:nth-of-type(5){
+    				outline:blue dashed 1px; 
+    			}**/ }
+    #main-navigation li:first-child {
+      order: 3;
+      width: 40%; }
+    #main-navigation li:nth-of-type(2) {
+      order: 1;
+      width: 15%; }
+    #main-navigation li:nth-of-type(3) {
+      order: 2;
+      width: 15%; }
+    #main-navigation li:nth-of-type(4) {
+      order: 4;
+      width: 15%; }
+    #main-navigation li:nth-of-type(5) {
+      order: 5;
+      width: 15%; }
 
   /**HERO**/
   .herotext, .noun, .create {
@@ -66,7 +87,7 @@
       margin-right: auto; }
 
   .hero-container-container {
-    margin-top: 10%;
+    margin-top: 15%;
     margin-bottom: 30%;
     background: none; }
 
@@ -87,7 +108,7 @@
 
   /** MOTTO **/
   .motto {
-    padding: 0px 3.75% 45px 3.75%; }
+    padding: 3% 3.75% 3% 3.75%; }
     .motto h2 {
       font-size: 1.5em; }
 

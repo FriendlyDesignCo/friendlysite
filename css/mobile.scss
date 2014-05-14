@@ -18,6 +18,8 @@ $buttonsize:5px;
 $break-tablet: 760px;
 $break-mobile: $break-tablet - 1;
 
+$logosize: 40%;
+
 @media all and (max-width: $break-mobile){
 
 /** Multi Selectors **/ 
@@ -28,47 +30,69 @@ $break-mobile: $break-tablet - 1;
 		@include stack();
 		text-align: center;
 		&:nth-of-type(2), &:nth-of-type(3){
-			padding-top: 25px;
+			padding-top: 50px;
 		}
 	}
 
 /**NAVIGATION**/
 
+	.logo {
+		padding:0 0px !important;
+
+		& img {
+			width: 95%;
+			margin: 0 auto;
+			padding: 0;
+			max-height: 115px;
+		}
+	}
+
 	#main-navigation {
 		
 		& ul{
 			display: flex;
+			align-items: center;
+		}
+
+		& li:nth-child(2) {
+			margin-left: 0px;
 		}
 
 		& li{
 			
 			&:first-child{
 				order:3;
+				width: $logosize;
 			}
 
 			&:nth-of-type(2){
 				order:1;
+				width:((100 - $logosize)/4);
 			}
 
 			&:nth-of-type(3){
 				order:2;
+				width:((100 - $logosize)/4);
 			}
 
 			&:nth-of-type(4){
 				order:4;
+				width:((100 - $logosize)/4);
 			}
 
 			&:nth-of-type(5){
 				order:5;
+				width:((100 - $logosize)/4);
 			}
 
-			&:nth-of-type(2), &:nth-of-type(3){
+		/*useful for debugging */
+			/** &:nth-of-type(2), &:nth-of-type(3){
 				outline:red dashed 1px;
 			}
 
 			&:nth-of-type(4), &:nth-of-type(5){
-				outline:blue dashed 1px;
-			}
+				outline:blue dashed 1px; 
+			}**/
 		}
 	}
 
@@ -85,7 +109,7 @@ $break-mobile: $break-tablet - 1;
 	}
 
 	.hero-container-container{
-		margin-top: 10%;
+		margin-top: 15%;
 		margin-bottom: 30%;
 		background: none;
 	}
@@ -112,7 +136,7 @@ $break-mobile: $break-tablet - 1;
 /** MOTTO **/ 
 
 	.motto {
-		padding: 0px (100/2-$tablet-width/2) 45px (100/2-$tablet-width/2);
+		padding: 3% (100/2-$tablet-width/2) 3% (100/2-$tablet-width/2);
 
 		& h2 {
 			font-size: 1.5em;
