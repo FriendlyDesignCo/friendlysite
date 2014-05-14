@@ -20,13 +20,10 @@ $break-mobile: $break-tablet - 1;
 
 @media all and (max-width: $break-mobile){
 
-	.motto {
-		padding: 0px (100/2-$tablet-width/2) 45px (100/2-$tablet-width/2);
-
-		& h2 {
-			font-size: 1.5em;
-		}	
-	}
+/** Multi Selectors **/ 
+	
+	/* stacks and adds padding to 2nd and 3rd children */ 
+	
 	.service, .processphoto, .colophon .column {
 		@include stack();
 		text-align: center;
@@ -34,6 +31,95 @@ $break-mobile: $break-tablet - 1;
 			padding-top: 25px;
 		}
 	}
+
+/**NAVIGATION**/
+
+	#main-navigation {
+		
+		& ul{
+			display: flex;
+		}
+
+		& li{
+			
+			&:first-child{
+				order:3;
+			}
+
+			&:nth-of-type(2){
+				order:1;
+			}
+
+			&:nth-of-type(3){
+				order:2;
+			}
+
+			&:nth-of-type(4){
+				order:4;
+			}
+
+			&:nth-of-type(5){
+				order:5;
+			}
+
+			&:nth-of-type(2), &:nth-of-type(3){
+				outline:red dashed 1px;
+			}
+
+			&:nth-of-type(4), &:nth-of-type(5){
+				outline:blue dashed 1px;
+			}
+		}
+	}
+
+/**HERO**/
+	
+
+	.herotext, .noun, .create{
+		text-align: center;
+	}
+
+	.herotext{
+		@include stack();
+		margin: 64% 0 0;
+	}
+
+	.hero-container-container{
+		margin-top: 10%;
+		margin-bottom: 30%;
+		background: none;
+	}
+
+	.hero-container{
+		background-repeat: no-repeat;
+		background-position: center top;
+		background-size: 47%;
+		transition: all 2s;
+	}
+
+	.hero:first-child{
+		height:51vw;
+	}
+
+	.create{
+		font-size: 7vw;
+	}
+
+	.noun{
+		font-size: 15vw;
+	}
+
+/** MOTTO **/ 
+
+	.motto {
+		padding: 0px (100/2-$tablet-width/2) 45px (100/2-$tablet-width/2);
+
+		& h2 {
+			font-size: 1.5em;
+		}	
+	}
+
+/** CLIENTS **/ 
 
 	.clientlogos{
 		& img { 
@@ -46,7 +132,6 @@ $break-mobile: $break-tablet - 1;
 		}
 
 	}
-
 	
 }
 

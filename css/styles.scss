@@ -123,9 +123,9 @@ h2, h3, .button{
 
 /** Logo **/
 .logo img{
-	width: 80%;
-	margin-left: 37px;
-	margin-top: -45px;
+	width: 150px;
+	margin-left: 30px;
+	margin-top: -43px;
 }
 
 /** Hero  **/
@@ -154,9 +154,6 @@ h2, h3, .button{
 .herotext{
 	@include col(3/5);
 	margin: 10% 0;
-}
-.heroimage{
-		position: 109%;
 }
 
 .create{
