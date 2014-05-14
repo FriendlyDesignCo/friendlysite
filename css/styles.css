@@ -84,9 +84,9 @@ h2, h3, .button {
 
 /** Logo **/
 .logo img {
-  width: 80%;
-  margin-left: 37px;
-  margin-top: -45px; }
+  width: 150px;
+  margin-left: 30px;
+  margin-top: -43px; }
 
 /** Hero  **/
 .hero-container-container {
@@ -138,9 +138,6 @@ h2, h3, .button {
     clear: both; }
   .herotext:last-child {
     margin-right: 0%; }
-
-.heroimage {
-  position: 109%; }
 
 .create {
   font-size: 4.25rem;

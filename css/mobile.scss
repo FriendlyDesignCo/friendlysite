@@ -18,22 +18,132 @@ $buttonsize:5px;
 $break-tablet: 760px;
 $break-mobile: $break-tablet - 1;
 
+$logosize: 40%;
+
 @media all and (max-width: $break-mobile){
 
+/** Multi Selectors **/ 
+	
+	/* stacks and adds padding to 2nd and 3rd children */ 
+	
+	.service, .processphoto, .colophon .column {
+		@include stack();
+		text-align: center;
+		&:nth-of-type(2), &:nth-of-type(3){
+			padding-top: 50px;
+		}
+	}
+
+/**NAVIGATION**/
+
+	.logo {
+		padding:0 0px !important;
+
+		& img {
+			width: 95%;
+			margin: 0 auto;
+			padding: 0;
+			max-height: 115px;
+		}
+	}
+
+	#main-navigation {
+		
+		& ul{
+			display: flex;
+			align-items: center;
+		}
+
+		& li:nth-child(2) {
+			margin-left: 0px;
+		}
+
+		& li{
+			
+			&:first-child{
+				order:3;
+				width: $logosize;
+			}
+
+			&:nth-of-type(2){
+				order:1;
+				width:((100 - $logosize)/4);
+			}
+
+			&:nth-of-type(3){
+				order:2;
+				width:((100 - $logosize)/4);
+			}
+
+			&:nth-of-type(4){
+				order:4;
+				width:((100 - $logosize)/4);
+			}
+
+			&:nth-of-type(5){
+				order:5;
+				width:((100 - $logosize)/4);
+			}
+
+		/*useful for debugging */
+			/** &:nth-of-type(2), &:nth-of-type(3){
+				outline:red dashed 1px;
+			}
+
+			&:nth-of-type(4), &:nth-of-type(5){
+				outline:blue dashed 1px; 
+			}**/
+		}
+	}
+
+/**HERO**/
+	
+
+	.herotext, .noun, .create{
+		text-align: center;
+	}
+
+	.herotext{
+		@include stack();
+		margin: 64% 0 0;
+	}
+
+	.hero-container-container{
+		margin-top: 15%;
+		margin-bottom: 30%;
+		background: none;
+	}
+
+	.hero-container{
+		background-repeat: no-repeat;
+		background-position: center top;
+		background-size: 47%;
+		transition: all 2s;
+	}
+
+	.hero:first-child{
+		height:51vw;
+	}
+
+	.create{
+		font-size: 7vw;
+	}
+
+	.noun{
+		font-size: 15vw;
+	}
+
+/** MOTTO **/ 
+
 	.motto {
-		padding: 0px (100/2-$tablet-width/2) 45px (100/2-$tablet-width/2);
+		padding: 3% (100/2-$tablet-width/2) 3% (100/2-$tablet-width/2);
 
 		& h2 {
 			font-size: 1.5em;
 		}	
 	}
-	.service, .processphoto, .colophon .column {
-		@include stack();
-		text-align: center;
-		&:nth-of-type(2), &:nth-of-type(3){
-			padding-top: 25px;
-		}
-	}
+
+/** CLIENTS **/ 
 
 	.clientlogos{
 		& img { 
@@ -46,7 +156,6 @@ $break-mobile: $break-tablet - 1;
 		}
 
 	}
-
 	
 }
 
