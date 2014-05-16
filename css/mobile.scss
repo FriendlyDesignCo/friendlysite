@@ -37,6 +37,15 @@ $logosize: 40%;
 		}
 	}
 
+	.services, .process, .clients{
+		margin-top: 95px;
+		& h2{
+			font-size: 1.75em;
+		}
+	}
+
+
+
 	/**HERO**/
 	
 
@@ -77,10 +86,10 @@ $logosize: 40%;
 	/** MOTTO **/ 
 
 	.motto {
-		padding: 3% (100/2-$tablet-width/2) 3% (100/2-$tablet-width/2);
-
+		padding: 8% (100/2-$tablet-width/2) 8% (100/2-$tablet-width/2);
+		margin-top: 175px;
 		& h2 {
-			font-size: 1.5em;
+			font-size: 1.25em;
 		}	
 	}
 
@@ -96,8 +105,24 @@ $logosize: 40%;
 				display: none;
 		}
 
+		& h2{
+			margin-bottom: 0 !important;
+		}
+
 	}
 
+	/** TESTIMONIALS **/
+
+	.testimonial p{
+		font-size: 1.25em;
+	}
+
+	/** CTA **/
+
+	.biglink {
+		font-size: 1.6rem;
+		font-size: 4.5vw;
+	}
 }
 
 /*** Mobile break point ***/

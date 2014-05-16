@@ -31,6 +31,11 @@
     .service:nth-of-type(2), .service:nth-of-type(3), .processphoto:nth-of-type(2), .processphoto:nth-of-type(3), .colophon .column:nth-of-type(2), .colophon .column:nth-of-type(3) {
       padding-top: 50px; }
 
+  .services, .process, .clients {
+    margin-top: 95px; }
+    .services h2, .process h2, .clients h2 {
+      font-size: 1.75em; }
+
   /**HERO**/
   .herotext, .noun, .create {
     text-align: center; }
@@ -70,9 +75,10 @@
 
   /** MOTTO **/
   .motto {
-    padding: 3% 2.5% 3% 2.5%; }
+    padding: 8% 2.5% 8% 2.5%;
+    margin-top: 175px; }
     .motto h2 {
-      font-size: 1.5em; }
+      font-size: 1.25em; }
 
   /** CLIENTS **/
   .clientlogos img {
@@ -99,7 +105,18 @@
       margin-right: 0%;
       float: right; }
   .clientlogos img:nth-child(n+7) {
-    display: none; } }
+    display: none; }
+  .clientlogos h2 {
+    margin-bottom: 0 !important; }
+
+  /** TESTIMONIALS **/
+  .testimonial p {
+    font-size: 1.25em; }
+
+  /** CTA **/
+  .biglink {
+    font-size: 1.6rem;
+    font-size: 4.5vw; } }
 /*** Mobile break point ***/
 @media all and (min-width: 599px) and (max-width: 760px) {
   /**NAVIGATION**/
