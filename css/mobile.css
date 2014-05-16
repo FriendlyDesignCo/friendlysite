@@ -12,7 +12,8 @@
   cf()
 */
 /* Variables */
-@media all and (max-width: 759px) {
+/*** Both mobile and small breakpoints ***/
+@media all and (max-width: 760px) {
   /** Multi Selectors **/
   /* stacks and adds padding to 2nd and 3rd children */
   .service, .processphoto, .colophon .column {
@@ -30,44 +31,10 @@
     .service:nth-of-type(2), .service:nth-of-type(3), .processphoto:nth-of-type(2), .processphoto:nth-of-type(3), .colophon .column:nth-of-type(2), .colophon .column:nth-of-type(3) {
       padding-top: 50px; }
 
-  /**NAVIGATION**/
-  .logo {
-    padding: 0 0px !important; }
-    .logo img {
-      width: 95%;
-      margin: 0 auto;
-      padding: 0;
-      max-height: 115px; }
-
-  #main-navigation ul {
-    display: flex;
-    align-items: center; }
-  #main-navigation li:nth-child(2) {
-    margin-left: 0px; }
-  #main-navigation li {
-    /*useful for debugging */
-    			/** &:nth-of-type(2), &:nth-of-type(3){
-    				outline:red dashed 1px;
-    			}
-    
-    			&:nth-of-type(4), &:nth-of-type(5){
-    				outline:blue dashed 1px; 
-    			}**/ }
-    #main-navigation li:first-child {
-      order: 3;
-      width: 40%; }
-    #main-navigation li:nth-of-type(2) {
-      order: 1;
-      width: 15%; }
-    #main-navigation li:nth-of-type(3) {
-      order: 2;
-      width: 15%; }
-    #main-navigation li:nth-of-type(4) {
-      order: 4;
-      width: 15%; }
-    #main-navigation li:nth-of-type(5) {
-      order: 5;
-      width: 15%; }
+  .services, .process, .clients {
+    margin-top: 95px; }
+    .services h2, .process h2, .clients h2 {
+      font-size: 1.75em; }
 
   /**HERO**/
   .herotext, .noun, .create {
@@ -108,9 +75,10 @@
 
   /** MOTTO **/
   .motto {
-    padding: 3% 3.75% 3% 3.75%; }
+    padding: 8% 2.5% 8% 2.5%;
+    margin-top: 175px; }
     .motto h2 {
-      font-size: 1.5em; }
+      font-size: 1.25em; }
 
   /** CLIENTS **/
   .clientlogos img {
@@ -137,4 +105,84 @@
       margin-right: 0%;
       float: right; }
   .clientlogos img:nth-child(n+7) {
-    display: none; } }
+    display: none; }
+  .clientlogos h2 {
+    margin-bottom: 0 !important; }
+
+  /** TESTIMONIALS **/
+  .testimonial p {
+    font-size: 1.25em; }
+
+  /** CTA **/
+  .biglink {
+    font-size: 1.6rem;
+    font-size: 4.5vw; } }
+/*** Mobile break point ***/
+@media all and (min-width: 599px) and (max-width: 760px) {
+  /**NAVIGATION**/
+  .logo {
+    padding: 0 0px !important; }
+    .logo img {
+      width: 95%;
+      margin: 0 auto;
+      padding: 0;
+      max-height: 115px; }
+
+  #main-navigation ul {
+    display: flex;
+    align-items: center; }
+  #main-navigation li:nth-child(2) {
+    margin-left: 0px; }
+  #main-navigation li {
+    /*useful for debugging */
+    			/** &:nth-of-type(2), &:nth-of-type(3){
+    				outline:red dashed 1px;
+    			}
+    
+    			&:nth-of-type(4), &:nth-of-type(5){
+    				outline:blue dashed 1px; 
+    			}**/ }
+    #main-navigation li:first-child {
+      order: 3;
+      width: 40%; }
+    #main-navigation li:nth-of-type(2) {
+      order: 1;
+      width: 15%; }
+    #main-navigation li:nth-of-type(3) {
+      order: 2;
+      width: 15%; }
+    #main-navigation li:nth-of-type(4) {
+      order: 4;
+      width: 15%; }
+    #main-navigation li:nth-of-type(5) {
+      order: 5;
+      width: 15%; } }
+/*** small break point ***/
+@media all and (max-width: 599px) {
+  #main {
+    padding-top: 176px; }
+
+  #main-navigation ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 85px; }
+  #main-navigation li:nth-child(2) {
+    margin-left: 0px; }
+  #main-navigation li {
+    flex: 0 0 20%;
+    padding: 10px 0;
+    /*useful for debugging */
+    		/**
+    			&:nth-of-type(2), &:nth-of-type(3){
+    				outline:red dashed 1px;
+    			}
+    
+    			&:nth-of-type(4), &:nth-of-type(5){
+    				outline:blue dashed 1px; 
+    			}**/ }
+    #main-navigation li:first-child {
+      flex-basis: 100%; }
+      #main-navigation li:first-child .logo img {
+        margin-left: 0px; } }
