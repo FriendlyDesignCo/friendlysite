@@ -15,7 +15,7 @@ $breathspace: 150px;
 $rightspace: 2em;
 $buttonsize:5px;
 
-$break-tablet: 760px;
+$break-tablet: 770px;
 $break-mobile: $break-tablet - 1;
 $break-small: 600px;
 
@@ -26,7 +26,7 @@ $logosize: 40%;
 @media all and (max-width: $break-tablet){
 
 	/** Multi Selectors **/ 
-	
+
 	/* stacks and adds padding to 2nd and 3rd children */ 
 	
 	.service, .processphoto, .colophon .column {
@@ -37,7 +37,7 @@ $logosize: 40%;
 		}
 	}
 
-	.services, .process, .clients{
+	.services, .process, .clients, .testimonial{
 		margin-top: 95px;
 		& h2{
 			font-size: 1.75em;
@@ -117,17 +117,45 @@ $logosize: 40%;
 		font-size: 1.25em;
 	}
 
+	/** COLOPHON **/
+
+	.colophon .column:last-child{
+		padding-bottom: 20px;
+	}
+
+
+
 	/** CTA **/
 
 	.biglink {
 		font-size: 1.6rem;
 		font-size: 4.5vw;
 	}
+
+	/** FOOTER **/
+
+	.inner ul{
+		@include center(100%);
+		& li {
+			@include col(1/4);
+			text-align: center;
+			& a {
+				@include center(100%)
+			}
+		}
+
+
+	}
+
+	.footer-meta #footer-copyright {
+		text-align: center;
+	}
+	
 }
 
 /*** Mobile break point ***/
 
-@media all and (min-width: $break-small - 1) and (max-width: $break-tablet){
+@media all and (min-width: $break-small) and (max-width: $break-tablet){
 
 /**NAVIGATION**/
 
