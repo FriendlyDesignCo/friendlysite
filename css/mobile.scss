@@ -9,21 +9,24 @@ $green: #51b748;
 $blue: #2993D1;
 $grey: #f3f3f3;
 $width: 75%;
-$tablet-width: 92.5%;
+$tablet-width: 95%;
 $smallwidth: 65%;
 $breathspace: 150px;
 $rightspace: 2em;
 $buttonsize:5px;
 
-$break-tablet: 760px;
+$break-tablet: 770px;
 $break-mobile: $break-tablet - 1;
+$break-small: 600px;
 
 $logosize: 40%;
 
-@media all and (max-width: $break-mobile){
+/*** Both mobile and small breakpoints ***/
 
-/** Multi Selectors **/ 
-	
+@media all and (max-width: $break-tablet){
+
+	/** Multi Selectors **/ 
+
 	/* stacks and adds padding to 2nd and 3rd children */ 
 	
 	.service, .processphoto, .colophon .column {
@@ -33,6 +36,126 @@ $logosize: 40%;
 			padding-top: 50px;
 		}
 	}
+
+	.services, .process, .clients, .testimonial{
+		margin-top: 95px;
+		& h2{
+			font-size: 1.75em;
+		}
+	}
+
+
+
+	/**HERO**/
+	
+
+	.herotext, .noun, .create{
+		text-align: center;
+	}
+
+	.herotext{
+		@include stack();
+		margin: 64% 0 0;
+	}
+
+	.hero-container-container{
+		margin-top: 15%;
+		margin-bottom: 30%;
+		background: none;
+	}
+
+	.hero-container{
+		background-repeat: no-repeat;
+		background-position: center top;
+		background-size: 47%;
+		transition: all 2s;
+	}
+
+	.hero:first-child{
+		height:51vw;
+	}
+
+	.create{
+		font-size: 7vw;
+	}
+
+	.noun{
+		font-size: 15vw;
+	}
+
+	/** MOTTO **/ 
+
+	.motto {
+		padding: 8% (100/2-$tablet-width/2) 8% (100/2-$tablet-width/2);
+		margin-top: 175px;
+		& h2 {
+			font-size: 1.25em;
+		}	
+	}
+
+	/** CLIENTS **/ 
+
+	.clientlogos{
+		& img { 
+			@include col(1/2, $uncycle:5, $cycle: 2);
+			margin-bottom: -10px;
+		}
+
+		& img:nth-child(n+7){
+				display: none;
+		}
+
+		& h2{
+			margin-bottom: 0 !important;
+		}
+
+	}
+
+	/** TESTIMONIALS **/
+
+	.testimonial p{
+		font-size: 1.25em;
+	}
+
+	/** COLOPHON **/
+
+	.colophon .column:last-child{
+		padding-bottom: 20px;
+	}
+
+
+
+	/** CTA **/
+
+	.biglink {
+		font-size: 1.6rem;
+		font-size: 4.5vw;
+	}
+
+	/** FOOTER **/
+
+	.inner ul{
+		@include center(100%);
+		& li {
+			@include col(1/4);
+			text-align: center;
+			& a {
+				@include center(100%)
+			}
+		}
+
+
+	}
+
+	.footer-meta #footer-copyright {
+		text-align: center;
+	}
+	
+}
+
+/*** Mobile break point ***/
+
+@media all and (min-width: $break-small) and (max-width: $break-tablet){
 
 /**NAVIGATION**/
 
@@ -95,67 +218,57 @@ $logosize: 40%;
 			}**/
 		}
 	}
-
-/**HERO**/
 	
+}
 
-	.herotext, .noun, .create{
-		text-align: center;
+
+/*** small break point ***/
+
+@media all and (max-width: $break-small - 1){
+
+	#main {
+		padding-top: 176px;
 	}
 
-	.herotext{
-		@include stack();
-		margin: 64% 0 0;
-	}
-
-	.hero-container-container{
-		margin-top: 15%;
-		margin-bottom: 30%;
-		background: none;
-	}
-
-	.hero-container{
-		background-repeat: no-repeat;
-		background-position: center top;
-		background-size: 47%;
-		transition: all 2s;
-	}
-
-	.hero:first-child{
-		height:51vw;
-	}
-
-	.create{
-		font-size: 7vw;
-	}
-
-	.noun{
-		font-size: 15vw;
-	}
-
-/** MOTTO **/ 
-
-	.motto {
-		padding: 3% (100/2-$tablet-width/2) 3% (100/2-$tablet-width/2);
-
-		& h2 {
-			font-size: 1.5em;
-		}	
-	}
-
-/** CLIENTS **/ 
-
-	.clientlogos{
-		& img { 
-			@include col(1/2, $uncycle:5, $cycle: 2);
-			margin-bottom: -10px;
+	#main-navigation {
+		
+		& ul{
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			align-items: center;
+			padding-bottom: 85px;
+						
 		}
 
-		& img:nth-child(n+7){
-				display: none;
+		& li:nth-child(2) {
+			margin-left: 0px;
 		}
 
+		& li{
+			
+			flex: 0 0 20%;
+			padding: 10px 0;
+
+			&:first-child{
+				flex-basis: 100%;
+
+				.logo img {
+					margin-left: 0px;
+				}
+			}
+
+
+		/*useful for debugging */
+		/**
+			&:nth-of-type(2), &:nth-of-type(3){
+				outline:red dashed 1px;
+			}
+
+			&:nth-of-type(4), &:nth-of-type(5){
+				outline:blue dashed 1px; 
+			}**/
+		}
 	}
-	
 }
 

@@ -12,7 +12,8 @@
   cf()
 */
 /* Variables */
-@media all and (max-width: 759px) {
+/*** Both mobile and small breakpoints ***/
+@media all and (max-width: 770px) {
   /** Multi Selectors **/
   /* stacks and adds padding to 2nd and 3rd children */
   .service, .processphoto, .colophon .column {
@@ -30,44 +31,10 @@
     .service:nth-of-type(2), .service:nth-of-type(3), .processphoto:nth-of-type(2), .processphoto:nth-of-type(3), .colophon .column:nth-of-type(2), .colophon .column:nth-of-type(3) {
       padding-top: 50px; }
 
-  /**NAVIGATION**/
-  .logo {
-    padding: 0 0px !important; }
-    .logo img {
-      width: 95%;
-      margin: 0 auto;
-      padding: 0;
-      max-height: 115px; }
-
-  #main-navigation ul {
-    display: flex;
-    align-items: center; }
-  #main-navigation li:nth-child(2) {
-    margin-left: 0px; }
-  #main-navigation li {
-    /*useful for debugging */
-    			/** &:nth-of-type(2), &:nth-of-type(3){
-    				outline:red dashed 1px;
-    			}
-    
-    			&:nth-of-type(4), &:nth-of-type(5){
-    				outline:blue dashed 1px; 
-    			}**/ }
-    #main-navigation li:first-child {
-      order: 3;
-      width: 40%; }
-    #main-navigation li:nth-of-type(2) {
-      order: 1;
-      width: 15%; }
-    #main-navigation li:nth-of-type(3) {
-      order: 2;
-      width: 15%; }
-    #main-navigation li:nth-of-type(4) {
-      order: 4;
-      width: 15%; }
-    #main-navigation li:nth-of-type(5) {
-      order: 5;
-      width: 15%; }
+  .services, .process, .clients, .testimonial {
+    margin-top: 95px; }
+    .services h2, .process h2, .clients h2, .testimonial h2 {
+      font-size: 1.75em; }
 
   /**HERO**/
   .herotext, .noun, .create {
@@ -108,9 +75,10 @@
 
   /** MOTTO **/
   .motto {
-    padding: 3% 3.75% 3% 3.75%; }
+    padding: 8% 2.5% 8% 2.5%;
+    margin-top: 175px; }
     .motto h2 {
-      font-size: 1.5em; }
+      font-size: 1.25em; }
 
   /** CLIENTS **/
   .clientlogos img {
@@ -137,4 +105,142 @@
       margin-right: 0%;
       float: right; }
   .clientlogos img:nth-child(n+7) {
-    display: none; } }
+    display: none; }
+  .clientlogos h2 {
+    margin-bottom: 0 !important; }
+
+  /** TESTIMONIALS **/
+  .testimonial p {
+    font-size: 1.25em; }
+
+  /** COLOPHON **/
+  .colophon .column:last-child {
+    padding-bottom: 20px; }
+
+  /** CTA **/
+  .biglink {
+    font-size: 1.6rem;
+    font-size: 4.5vw; }
+
+  /** FOOTER **/
+  .inner ul {
+    *zoom: 1;
+    width: auto;
+    max-width: 100%;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0; }
+    .inner ul:before, .inner ul:after {
+      content: '';
+      display: table; }
+    .inner ul:after {
+      clear: both; }
+    .inner ul li {
+      *zoom: 1;
+      float: left;
+      display: inline;
+      clear: none;
+      text-align: inherit;
+      padding-left: 0;
+      padding-right: 0;
+      width: 21.25%;
+      margin-left: 0%;
+      margin-right: 5%;
+      text-align: center; }
+      .inner ul li:before, .inner ul li:after {
+        content: '';
+        display: table; }
+      .inner ul li:after {
+        clear: both; }
+      .inner ul li:last-child {
+        margin-right: 0%; }
+      .inner ul li a {
+        *zoom: 1;
+        width: auto;
+        max-width: 100%;
+        float: none;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 0;
+        padding-right: 0; }
+        .inner ul li a:before, .inner ul li a:after {
+          content: '';
+          display: table; }
+        .inner ul li a:after {
+          clear: both; }
+
+  .footer-meta #footer-copyright {
+    text-align: center; } }
+/*** Mobile break point ***/
+@media all and (min-width: 600px) and (max-width: 770px) {
+  /**NAVIGATION**/
+  .logo {
+    padding: 0 0px !important; }
+    .logo img {
+      width: 95%;
+      margin: 0 auto;
+      padding: 0;
+      max-height: 115px; }
+
+  #main-navigation ul {
+    display: flex;
+    align-items: center; }
+  #main-navigation li:nth-child(2) {
+    margin-left: 0px; }
+  #main-navigation li {
+    /*useful for debugging */
+    			/** &:nth-of-type(2), &:nth-of-type(3){
+    				outline:red dashed 1px;
+    			}
+    
+    			&:nth-of-type(4), &:nth-of-type(5){
+    				outline:blue dashed 1px; 
+    			}**/ }
+    #main-navigation li:first-child {
+      order: 3;
+      width: 40%; }
+    #main-navigation li:nth-of-type(2) {
+      order: 1;
+      width: 15%; }
+    #main-navigation li:nth-of-type(3) {
+      order: 2;
+      width: 15%; }
+    #main-navigation li:nth-of-type(4) {
+      order: 4;
+      width: 15%; }
+    #main-navigation li:nth-of-type(5) {
+      order: 5;
+      width: 15%; } }
+/*** small break point ***/
+@media all and (max-width: 599px) {
+  #main {
+    padding-top: 176px; }
+
+  #main-navigation ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 85px; }
+  #main-navigation li:nth-child(2) {
+    margin-left: 0px; }
+  #main-navigation li {
+    flex: 0 0 20%;
+    padding: 10px 0;
+    /*useful for debugging */
+    		/**
+    			&:nth-of-type(2), &:nth-of-type(3){
+    				outline:red dashed 1px;
+    			}
+    
+    			&:nth-of-type(4), &:nth-of-type(5){
+    				outline:blue dashed 1px; 
+    			}**/ }
+    #main-navigation li:first-child {
+      flex-basis: 100%; }
+      #main-navigation li:first-child .logo img {
+        margin-left: 0px; } }
