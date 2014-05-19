@@ -233,6 +233,9 @@ h2, h3, .button {
   margin-right: auto;
   display: table; }
 
+.process p:nth-child(2) {
+  padding-bottom: 20px; }
+
 .processphoto {
   *zoom: 1;
   float: left;
