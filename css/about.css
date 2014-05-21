@@ -1,0 +1,274 @@
+/*  Syntax Quick Reference
+  --------------------------
+  column($ratios: 1, $offset: 0, $cycle: 0, $uncycle: 0, $gutter: $jeet-gutter)
+  span($ratio: 1, $offset: 0)
+  shift($ratios: 0, $col_or_span: column, $gutter: $jeet-gutter)
+  unshift()
+  edit()
+  center($max_width: 1410px, $pad: 0)
+  stack($pad: 0, $align: false)
+  unstack()
+  align($direction: both)
+  cf()
+*/
+/* Variables */
+.aboutfriendly {
+  *zoom: 1;
+  width: auto;
+  max-width: 75%;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  display: block;
+  clear: both;
+  float: none;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin-bottom: 5em; }
+  .aboutfriendly:before, .aboutfriendly:after {
+    content: '';
+    display: table; }
+  .aboutfriendly:after {
+    clear: both; }
+  .aboutfriendly:first-child {
+    margin-left: auto; }
+  .aboutfriendly:last-child {
+    margin-right: auto; }
+  .aboutfriendly:first-child {
+    margin-top: 100px; }
+  .aboutfriendly .aboutphoto {
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 30.0%;
+    margin-left: 0%;
+    margin-right: 5%;
+    position: relative;
+    margin-top: 22px; }
+    .aboutfriendly .aboutphoto:before, .aboutfriendly .aboutphoto:after {
+      content: '';
+      display: table; }
+    .aboutfriendly .aboutphoto:after {
+      clear: both; }
+    .aboutfriendly .aboutphoto:last-child {
+      margin-right: 0%; }
+    .aboutfriendly .aboutphoto img {
+      border-radius: 30em;
+      width: 100%;
+      margin: auto;
+      display: block; }
+  .aboutfriendly .abouttext {
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 65.0%;
+    margin-left: 0%;
+    margin-right: 5%; }
+    .aboutfriendly .abouttext:before, .aboutfriendly .abouttext:after {
+      content: '';
+      display: table; }
+    .aboutfriendly .abouttext:after {
+      clear: both; }
+    .aboutfriendly .abouttext:last-child {
+      margin-right: 0%; }
+    .aboutfriendly .abouttext p span {
+      font-family: "proxima-nova", "helvetica neue", helvetica, arial, sans-serif;
+      font-weight: bold;
+      color: #51b748; }
+
+.aboutsocial .icon-tumblr:before {
+  content: "\26"; }
+
+@media (min-width: 770px) and (max-width: 900px) {
+  .aboutfriendly {
+    *zoom: 1;
+    width: auto;
+    max-width: 75%;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-bottom: 5em; }
+    .aboutfriendly:before, .aboutfriendly:after {
+      content: '';
+      display: table; }
+    .aboutfriendly:after {
+      clear: both; }
+    .aboutfriendly:first-child {
+      margin-left: auto; }
+    .aboutfriendly:last-child {
+      margin-right: auto; }
+    .aboutfriendly:first-child {
+      margin-top: 75px; }
+    .aboutfriendly .aboutphoto {
+      display: block;
+      clear: both;
+      float: none;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      margin-top: 0; }
+      .aboutfriendly .aboutphoto:first-child {
+        margin-left: auto; }
+      .aboutfriendly .aboutphoto:last-child {
+        margin-right: auto; }
+      .aboutfriendly .aboutphoto img {
+        border-radius: 30em;
+        width: 275px;
+        margin: auto;
+        display: block; }
+    .aboutfriendly .abouttext {
+      display: block;
+      clear: both;
+      float: none;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto; }
+      .aboutfriendly .abouttext:first-child {
+        margin-left: auto; }
+      .aboutfriendly .abouttext:last-child {
+        margin-right: auto; }
+      .aboutfriendly .abouttext p span {
+        font-family: "proxima-nova", "helvetica neue", helvetica, arial, sans-serif;
+        font-weight: bold;
+        color: #51b748; }
+
+  .aboutsocial .icon-tumblr:before {
+    content: "\26"; } }
+@media (min-width: 600px) and (max-width: 770px) {
+  .aboutfriendly {
+    *zoom: 1;
+    width: auto;
+    max-width: 92.5%;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-bottom: 5em; }
+    .aboutfriendly:before, .aboutfriendly:after {
+      content: '';
+      display: table; }
+    .aboutfriendly:after {
+      clear: both; }
+    .aboutfriendly:first-child {
+      margin-left: auto; }
+    .aboutfriendly:last-child {
+      margin-right: auto; }
+    .aboutfriendly:first-child {
+      margin-top: 100px; }
+    .aboutfriendly .aboutphoto {
+      display: block;
+      clear: both;
+      float: none;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      width: 225px;
+      margin-top: 0; }
+      .aboutfriendly .aboutphoto:first-child {
+        margin-left: auto; }
+      .aboutfriendly .aboutphoto:last-child {
+        margin-right: auto; }
+    .aboutfriendly .abouttext {
+      display: block;
+      clear: both;
+      float: none;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto; }
+      .aboutfriendly .abouttext:first-child {
+        margin-left: auto; }
+      .aboutfriendly .abouttext:last-child {
+        margin-right: auto; }
+
+  .aboutsocial .icon-tumblr:before {
+    content: "\26"; } }
+@media (max-width: 600px) {
+  .aboutfriendly {
+    *zoom: 1;
+    width: auto;
+    max-width: 92.5%;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-bottom: 5em; }
+    .aboutfriendly:before, .aboutfriendly:after {
+      content: '';
+      display: table; }
+    .aboutfriendly:after {
+      clear: both; }
+    .aboutfriendly:first-child {
+      margin-left: auto; }
+    .aboutfriendly:last-child {
+      margin-right: auto; }
+    .aboutfriendly:first-child {
+      margin-top: 50px; }
+    .aboutfriendly .aboutphoto {
+      display: block;
+      clear: both;
+      float: none;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      width: 225px;
+      margin-top: 0; }
+      .aboutfriendly .aboutphoto:first-child {
+        margin-left: auto; }
+      .aboutfriendly .aboutphoto:last-child {
+        margin-right: auto; }
+    .aboutfriendly .abouttext {
+      display: block;
+      clear: both;
+      float: none;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto; }
+      .aboutfriendly .abouttext:first-child {
+        margin-left: auto; }
+      .aboutfriendly .abouttext:last-child {
+        margin-right: auto; }
+
+  .aboutsocial .icon-tumblr:before {
+    content: "\26"; } }
