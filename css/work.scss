@@ -111,3 +111,75 @@ $buttonsize:5px;
 	width: 100%;
 	margin-top: 3.3%;
 }
+
+
+/** ---- MEDIA QUERIES ---- **/
+
+$break-large: 900px;
+$break-tablet: 770px;
+$break-small: 600px;
+
+//tablet media query
+@media (min-width: $break-small) and (max-width: $break-large){
+	
+	.casestudies, .workcontainer{
+		@include center(92.5%);
+		transition: all 2s;
+	}
+
+	.caseimages{
+		@include stack();
+		transition: all 2s;
+	}
+
+	.bigleft > img,{
+		width: 100%;
+		margin-bottom: 3.3%;
+		margin-right:0;
+		margin-left:0;
+		transition: all 2s;
+	}
+
+	.bigright > img{
+		width: 100%;
+		margin-top: 3.3%;
+		margin-right:0;
+		margin-left:0;
+		transition: all 2s;
+	}
+
+	.smallright, .smallleft{
+		@include unstack();
+		width: 100%;
+		transition: all 2s;
+		& img{
+			@include col(1/2);
+			transition: all 2s;
+			&:last-child{
+				margin-top:0;
+				transition: all 2s;
+			}
+		}
+	}
+
+}
+//Small media query
+
+@media (max-width: $break-small){
+	.casestudies, .workcontainer{
+		@include center(92.5%);
+	}
+
+	.casestudies{
+		margin-top:10px;
+	}
+
+	 .caseimages, .threeup, .bigcenter, .bigleft, .bigright, .smallright, .smallleft{
+		@include stack();
+		margin-top: 0!important;
+		& img{
+			@include stack();
+			margin-top: 10px !important;
+		}
+	}
+}

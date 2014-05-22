@@ -210,3 +210,129 @@
     display: table; }
   .bigcenter img:after {
     clear: both; }
+
+/** ---- MEDIA QUERIES ---- **/
+@media (min-width: 600px) and (max-width: 900px) {
+  .casestudies, .workcontainer {
+    *zoom: 1;
+    width: auto;
+    max-width: 92.5%;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+    transition: all 2s; }
+    .casestudies:before, .casestudies:after, .workcontainer:before, .workcontainer:after {
+      content: '';
+      display: table; }
+    .casestudies:after, .workcontainer:after {
+      clear: both; }
+
+  .caseimages {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 2s; }
+    .caseimages:first-child {
+      margin-left: auto; }
+    .caseimages:last-child {
+      margin-right: auto; }
+
+  .bigleft > img {
+    width: 100%;
+    margin-bottom: 3.3%;
+    margin-right: 0;
+    margin-left: 0;
+    transition: all 2s; }
+
+  .bigright > img {
+    width: 100%;
+    margin-top: 3.3%;
+    margin-right: 0;
+    margin-left: 0;
+    transition: all 2s; }
+
+  .smallright, .smallleft {
+    display: inline;
+    clear: none;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+    width: 100%;
+    transition: all 2s; }
+    .smallright:first-child, .smallleft:first-child {
+      margin-left: 0; }
+    .smallright:last-child, .smallleft:last-child {
+      margin-right: 0; }
+    .smallright img, .smallleft img {
+      *zoom: 1;
+      float: left;
+      display: inline;
+      clear: none;
+      text-align: inherit;
+      padding-left: 0;
+      padding-right: 0;
+      width: 47.5%;
+      margin-left: 0%;
+      margin-right: 5%;
+      transition: all 2s; }
+      .smallright img:before, .smallright img:after, .smallleft img:before, .smallleft img:after {
+        content: '';
+        display: table; }
+      .smallright img:after, .smallleft img:after {
+        clear: both; }
+      .smallright img:last-child, .smallleft img:last-child {
+        margin-right: 0%; }
+      .smallright img:last-child, .smallleft img:last-child {
+        margin-top: 0;
+        transition: all 2s; } }
+@media (max-width: 600px) {
+  .casestudies, .workcontainer {
+    *zoom: 1;
+    width: auto;
+    max-width: 92.5%;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0; }
+    .casestudies:before, .casestudies:after, .workcontainer:before, .workcontainer:after {
+      content: '';
+      display: table; }
+    .casestudies:after, .workcontainer:after {
+      clear: both; }
+
+  .casestudies {
+    margin-top: 10px; }
+
+  .caseimages, .threeup, .bigcenter, .bigleft, .bigright, .smallright, .smallleft {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0 !important; }
+    .caseimages:first-child, .threeup:first-child, .bigcenter:first-child, .bigleft:first-child, .bigright:first-child, .smallright:first-child, .smallleft:first-child {
+      margin-left: auto; }
+    .caseimages:last-child, .threeup:last-child, .bigcenter:last-child, .bigleft:last-child, .bigright:last-child, .smallright:last-child, .smallleft:last-child {
+      margin-right: auto; }
+    .caseimages img, .threeup img, .bigcenter img, .bigleft img, .bigright img, .smallright img, .smallleft img {
+      display: block;
+      clear: both;
+      float: none;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10px !important; }
+      .caseimages img:first-child, .threeup img:first-child, .bigcenter img:first-child, .bigleft img:first-child, .bigright img:first-child, .smallright img:first-child, .smallleft img:first-child {
+        margin-left: auto; }
+      .caseimages img:last-child, .threeup img:last-child, .bigcenter img:last-child, .bigleft img:last-child, .bigright img:last-child, .smallright img:last-child, .smallleft img:last-child {
+        margin-right: auto; } }
