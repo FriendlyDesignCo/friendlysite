@@ -53,8 +53,7 @@
   padding-right: 0;
   width: 30.0%;
   margin-left: 0%;
-  margin-right: 5%;
-  outline: blue dashed 1px; }
+  margin-right: 5%; }
   .casestudies img:before, .casestudies img:after {
     content: '';
     display: table; }
@@ -75,8 +74,7 @@
     padding-right: 0;
     width: 30.0%;
     margin-left: 0%;
-    margin-right: 5%;
-    outline: red dashed 1px; }
+    margin-right: 5%; }
     .threeup img:before, .threeup img:after {
       content: '';
       display: table; }
