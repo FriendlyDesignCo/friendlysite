@@ -58,14 +58,12 @@ $buttonsize:5px;
 
 .casestudies img{
 	@include col(1/3);
-	outline: blue dashed 1px;
 }
 //three up
 .threeup{
 	overflow: auto;
 	& img{
 		@include col(1/3);
-		outline: red dashed 1px;
 	}
 }
 
