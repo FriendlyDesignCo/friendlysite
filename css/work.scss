@@ -1,0 +1,115 @@
+@import 'jeet/index';
+
+/* Variables */
+
+$horizon: #648092;
+$black: #2e3a2f;
+$darkgreen: #00733B;
+$green: #51b748; 
+$blue: #2993D1;
+$grey: #f3f3f3;
+$width: 75%;
+$smallwidth: 65%;
+$breathspace: 150px;
+$rightspace: 2em;
+$buttonsize:5px;
+
+/* Extends */
+
+%proxima{
+	font-family: "proxima-nova", "helvetica neue", helvetica, arial, sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+%chaparal{
+	font-family: "ff-tisa-web-pro", "Chaparal Pro", Garamond, Georgia, Serif;
+	font-weight: normal;
+	
+}
+
+%fullwidth {
+	 min-height: 100%; /* Set to minimum height so overflow doesn't get hidden */
+    overflow-y: hidden;	position: relative;
+	width: 100%;
+	float: left;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;
+}
+
+.casestudies, .workcontainer{
+	@include center($width);
+
+}
+
+.casestudies h2, .workcontainer h2{
+	@extend %proxima;
+	color: $green;
+}
+
+.casestudies, .workcontainer{
+	margin-top: 50px;
+}
+
+.workcontainer{
+	margin-bottom: 50px;
+}
+
+.casestudies img{
+	@include col(1/3);
+	outline: blue dashed 1px;
+}
+//three up
+.threeup{
+	overflow: auto;
+	& img{
+		@include col(1/3);
+		outline: red dashed 1px;
+	}
+}
+
+//bigleft
+.bigleft{
+	margin-top: 3.3%;
+	overflow: auto;
+}
+.bigleft img{
+	@include col(2/3)
+}
+
+.smallright{
+	@include col(1/3);
+	& img{ 
+		@include stack();
+		&:last-child{
+			margin-top:10.2%;
+		}
+	}
+}
+
+//bigright
+.bigright{
+	margin-top: 3.3%;
+	overflow: auto;
+}
+.bigright img{
+	@include col(2/3)
+}
+
+.smallleft{
+	@include col(1/3);
+	& img{ 
+		@include stack();
+		&:last-child{
+			margin-top:10.2%;
+		}
+	}
+}
+
+//bigcenter
+.bigcenter img{
+	@include center(100%);
+	width: 100%;
+	margin-top: 3.3%;
+}
