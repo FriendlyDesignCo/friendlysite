@@ -16,7 +16,6 @@ $rightspace: 2em;
 $buttonsize:5px;
 
 $break-tablet: 770px;
-$break-mobile: $break-tablet - 1;
 $break-small: 600px;
 
 $logosize: 40%;
@@ -224,7 +223,7 @@ $logosize: 40%;
 
 /*** small break point ***/
 
-@media all and (max-width: $break-small - 1){
+@media all and (max-width: $break-small){
 
 	#main {
 		padding-top: 176px;

@@ -178,6 +178,9 @@ h2, h3, .button {
   .motto:after {
     clear: both; }
 
+.motto h2 {
+  text-align: left; }
+
 /** Serices **/
 .services {
   margin-top: 150px;
