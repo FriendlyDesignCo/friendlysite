@@ -1,4 +1,4 @@
-friendlysite
+FriendlyDesign.Co website v2
 ============
 
 ## Technology
