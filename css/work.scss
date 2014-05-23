@@ -56,8 +56,12 @@ $buttonsize:5px;
 	margin-bottom: 50px;
 }
 
-.casestudies img{
+.caseimages a{
 	@include col(1/3);
+	overflow: auto;
+	& img{
+		width: 100%;
+	}
 }
 //three up
 .threeup{
@@ -174,7 +178,7 @@ $break-small: 600px;
 		margin-top:10px;
 	}
 
-	 .caseimages, .threeup, .bigcenter, .bigleft, .bigright, .smallright, .smallleft{
+	 .caseimages a, .threeup, .bigcenter, .bigleft, .bigright, .smallright, .smallleft{
 		@include stack();
 		margin-top: 0!important;
 		& img{
