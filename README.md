@@ -4,7 +4,7 @@ friendlysite
 ## Technology
 
 ###Jeet
-The friendly site uses [jeet.gs](http://www.jeet.gs) almost exclusively for layout and column structuring. Make sure that jeet isn't able to posistion something the way you want before adding something new to the codebase.
+The friendly site uses [jeet.gs](http://www.jeet.gs) almost exclusively for layout and column structuring. Make sure that jeet isn't able to posistion something the way you want before adding something new to the codebase. Jeet's creator, [Cory Simmons](https://github.com/corysimmons) is very active on [twitter](https://twitter.com/ccccory) and is usally very helpful when it comes to solving problems in Jeet.
 
 ###Typed.JS
 The Typing Animation comes from Matt Boldt's [Typed.js](..mattboldt/typed.js/). This is a relatively new plugin so check his repo sporadically to see if he's fixed any errors or added features.
