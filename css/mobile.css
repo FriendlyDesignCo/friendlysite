@@ -216,7 +216,7 @@
       order: 5;
       width: 15%; } }
 /*** small break point ***/
-@media all and (max-width: 599px) {
+@media all and (max-width: 600px) {
   #main {
     padding-top: 176px; }
 
