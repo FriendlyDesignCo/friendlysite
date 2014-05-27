@@ -17,4 +17,4 @@ All of the CSS is written in [SASS](http://sass-lang.com/) using the SCSS syntax
 ###SASS
 There are some exceptions to this but in general the site keeps a very semantic markup for HTML and keeps styling syntax in CSS (or SASS rather). The site tries only to use classes when necessary and attempts to keep id usage to an absolute minimum (at least in the new codebase). So unlike in bootstrap where they create classes to handle quick styling, i.e. `<div class="large-col-10 center">`, the friendly site highly utilizes advanced CSS selectors to control styling while keeping the code very dry.
 
-For example if we need to add a top margin to a single column img when on mobile we would use `.examplediv img:first-of-type{ margin-top:10px; }` rather than creating a custom class just to add a single declaration. 
+For example if we need to add a top margin to a single column img when on mobile we would use `.examplediv img:first-of-type{ margin-top:10px;}` rather than creating a custom class just to add a single declaration. 
