@@ -1,21 +1,6 @@
 @import 'jeet/index';
+@import 'settings';
 
-/* Variables */
-
-$horizon: #648092;
-$black: #2e3a2f;
-$darkgreen: #00733B;
-$green: #51b748; 
-$blue: #2993D1;
-$grey: #f3f3f3;
-$tablet-width: 92.5%;
-$smallwidth: 65%;
-$breathspace: 150px;
-$rightspace: 2em;
-$buttonsize:5px;
-
-$break-large: 900px;
-$break-tablet: 770px;
 
 @media all and (min-width: $break-tablet) and (max-width: $break-large){
 
