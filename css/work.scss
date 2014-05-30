@@ -1,29 +1,6 @@
 @import 'jeet/index';
 @import 'settings';
 
-/* Extends */
-
-%proxima{
-	font-family: "proxima-nova", "helvetica neue", helvetica, arial, sans-serif;
-	font-weight: 700;
-	text-transform: uppercase;
-}
-
-%chaparal{
-	font-family: "ff-tisa-web-pro", "Chaparal Pro", Garamond, Georgia, Serif;
-	font-weight: normal;
-	
-}
-
-%fullwidth {
-	 min-height: 100%; /* Set to minimum height so overflow doesn't get hidden */
-    overflow-y: hidden;	position: relative;
-	width: 100%;
-	float: left;
-	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
-	box-sizing: border-box;
-}
 
 .casestudies, .workcontainer{
 	@include center($width);
@@ -48,8 +25,11 @@
 	overflow: auto;
 	& img{
 		width: 100%;
+		@extend %casestudylink;
 	}
 }
+
+
 //three up
 .threeup{
 	overflow: auto;

@@ -12,6 +12,7 @@
   cf()
 */
 /* Variables */
+/* Extends */
 @media all and (min-width: 770px) and (max-width: 900px) {
   .motto:first-child, .services, .process {
     *zoom: 1;
