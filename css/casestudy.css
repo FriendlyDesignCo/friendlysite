@@ -33,7 +33,7 @@
 
 .caseimages a img {
   margin-bottom: 10px;
-  box-shadow: 0px -1px 0px 7px white, 0px -1px 0px 8px #d6d6d6, 0 10px 16px #919191; }
+  box-shadow: 0px 0px 0px 7px white, 0px 0px 0px 8px #919191; }
 
 .casestudies, .workcontainer {
   *zoom: 1;
@@ -80,7 +80,8 @@
   .caseimages a:last-child {
     margin-right: 0%; }
   .caseimages a img {
-    width: 100%; }
+    width: 100%;
+    max-width: 270px; }
 
 .threeup {
   overflow: auto; }
