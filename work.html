@@ -102,39 +102,39 @@
                         <h2>Case Studies</h2>
                         <div>
                             <div class="processphoto">
-                                <a href="casestudy.html"><img src="images/thumb-afge.png"></a>
+                                <a href="casestudy.html"><img class="b-lazy" data-src="images/thumb-afge.png" src="images/loading.jpg"/></a>
                             </div>
                             <div class="processphoto">
-                                <a href="casestudy.html"><img src="images/thumb-kogod.png"></a>
+                                <a href="casestudy.html"><img class="b-lazy" data-src="images/thumb-kogod.png" src="images/loading.jpg"/></a>
                             </div>
                             <div class="processphoto">
-                                <a href="casestudy.html"><img src="images/thumb-urgently.png"></a>
+                                <a href="casestudy.html"><img class="b-lazy" data-src="images/thumb-urgently.png" src="images/loading.jpg"/></a>
                             </div>
                         </div>
                     </div>
                     <div class="workcontainer">
                         <h2>Additional Work</h2>
                         <div class="threeup">
-                            <img src="http://placekitten.com/323/200">
-                            <img src="http://placekitten.com/323/200">
-                            <img src="http://placekitten.com/323/200">
+                            <img class="b-lazy" data-src="http://placekitten.com/323/200" src="images/loading.jpg">
+                            <img class="b-lazy" data-src="http://placekitten.com/323/200" src="images/loading.jpg">
+                            <img class="b-lazy" data-src="http://placekitten.com/323/200" src="images/loading.jpg">
                         </div>
                         <div class="bigleft">
-                            <img src="http://placekitten.com/323/200">
+                            <img class="b-lazy" data-src="http://placekitten.com/323/200" src="images/loading.jpg">
                             <div class="smallright">
-                                <img src="http://placekitten.com/323/200">
-                                <img src="http://placekitten.com/323/200">
+                                <img class="b-lazy" data-src="http://placekitten.com/323/200" src="images/loading.jpg">
+                                <img class="b-lazy" data-src="http://placekitten.com/323/200" src="images/loading.jpg">
                             </div>
                         </div>
                         <div class="bigright">
                             <div class="smallleft">
-                                <img src="http://placekitten.com/323/200">
-                                <img src="http://placekitten.com/323/200">
+                                <img class="b-lazy" data-src="http://placekitten.com/323/200" src="images/loading.jpg">
+                                <img class="b-lazy" data-src="http://placekitten.com/323/200" src="images/loading.jpg">
                             </div>
-                            <img src="http://placekitten.com/323/200">
+                            <img class="b-lazy" data-src="http://placekitten.com/323/200" src="images/loading.jpg">
                         </div>
                         <div class="bigcenter">
-                            <img src="http://placekitten.com/323/200">
+                            <img class="b-lazy" data-src="http://placekitten.com/323/200" src="images/loading.jpg">
                         </div>
                     </div>
                     <!--End content-->     
@@ -189,7 +189,16 @@
         </footer>
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+   
+    <script type="text/javascript" src="js/lazy.js"></script>
+    <script>
+        var bLazy = new Blazy({
+          success: function(){
+            updateCounter();
+          }
+        });
     </script>
+
     <script src="js/index.js"></script>
     <script src="js/typed.js"></script>
     <script>

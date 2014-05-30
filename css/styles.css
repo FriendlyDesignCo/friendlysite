@@ -28,6 +28,18 @@
   .processphoto img:hover {
     box-shadow: 0px 0px 0px 7px white, 0px 0px 0px 10px #50B748,0px 3px 0px 10px #15683C; }
 
+/*This Controls the lazy load tranisition animation*/
+.b-lazy {
+  -webkit-transition: opacity 1000ms ease-in-out;
+  -moz-transition: opacity 1000ms ease-in-out;
+  -o-transition: opacity 1000ms ease-in-out;
+  transition: opacity 1000ms ease-in-out;
+  max-width: 100%;
+  opacity: 0; }
+
+.b-lazy.b-loaded {
+  opacity: 1; }
+
 /* body styles */
 * {
   z-index: 4; }
