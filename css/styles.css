@@ -72,24 +72,26 @@ a {
 
 /* Button Styling */
 .button {
-  padding: 2.5% 5%;
+  width: auto !important;
+  border: none !important;
+  padding: 2.5% 5% !important;
   background-color: #2993d1;
-  color: #fff;
+  color: #fff !important;
   text-decoration: none;
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;
   /* Firefox, other Gecko */
   box-sizing: border-box;
-  border-radius: 100em;
+  border-radius: 100em !important;
   position: relative;
   top: 0;
   left: 0;
   transition: all 0.25s;
   box-shadow: 0 3px 0  0 white; }
   .button:hover {
-    box-shadow: 0 3px 0 0 #00733b;
-    background-color: #51b748; }
+    box-shadow: 0 3px 0 0 #00733b !important;
+    background-color: #51b748 !important; }
 
 /* Multi Selectors*/
 .services > h2, .process > h2, .via > h2, .clients > h2 {
@@ -190,7 +192,7 @@ h2, h3, .button {
   padding-left: 0;
   padding-right: 0;
   background-color: #51b748;
-  padding: 25px 12.5% 75px 12.5%; }
+  padding: 20px 12.5% 60px 12.5%; }
   .motto:before, .motto:after {
     content: '';
     display: table; }
@@ -202,7 +204,7 @@ h2, h3, .button {
 
 /** Serices **/
 .services {
-  margin-top: 150px;
+  margin-top: 80px;
   width: 75%;
   margin-left: auto;
   margin-right: auto;
@@ -271,9 +273,12 @@ h2, h3, .button {
   .servicebutton:after {
     clear: both; }
 
+.services ~ .cta {
+  padding: 60px 0 40px 0; }
+
 /** process **/
 .process {
-  margin-top: 150px;
+  margin-top: 80px;
   width: 75%;
   margin-left: auto;
   margin-right: auto;
@@ -329,7 +334,7 @@ h2, h3, .button {
   margin-left: auto;
   padding-left: 0;
   padding-right: 0;
-  margin-top: 150px; }
+  margin-top: 80px; }
   .clients:before, .clients:after {
     content: '';
     display: table; }
@@ -387,7 +392,7 @@ h2, h3, .button {
   padding-right: 0;
   background-color: #51b748;
   padding: 60px 0;
-  margin-top: 150px; }
+  margin-top: 80px; }
   .testimonial:before, .testimonial:after {
     content: '';
     display: table; }
@@ -451,13 +456,15 @@ blockquote {
   padding-left: 0;
   padding-right: 0;
   background-color: white;
-  padding: 100px 0;
   text-align: center; }
   .cta:before, .cta:after {
     content: '';
     display: table; }
   .cta:after {
     clear: both; }
+
+.testimonial ~ .cta {
+  padding: 120px 0; }
 
 .biglink {
   font-size: 2.6rem;

@@ -46,15 +46,17 @@ a{
 /* Button Styling */
 
 .button{
-	padding: 2.5% 5%;
+	width: auto !important;
+	border: none !important;
+	padding: 2.5% 5% !important;
 	background-color: $blue;
-	color: #fff;
+	color: #fff !important;
 	@extend %proxima;
 	text-decoration: none;
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box;
-	border-radius: 100em;
+	border-radius: 100em !important;
 	position: relative;
 	top: 0;
 	left: 0;
@@ -62,8 +64,8 @@ a{
 	box-shadow: 0 3px 0  0 white;
 
 	&:hover{
-		box-shadow: 0 3px 0  0 $darkgreen;
-		background-color: $green;
+		box-shadow: 0 3px 0  0 $darkgreen !important;
+		background-color: $green !important;
 	}
 
 }
@@ -148,7 +150,7 @@ h2, h3, .button{
 .motto{
 	@include center(100%);
 	background-color: $green;
-	padding: 25px (100/2-$width/2) 75px (100/2-$width/2);
+	padding: ($breathspace*.25) (100/2-$width/2) (($breathspace*.25)*3) (100/2-$width/2);
 	
 }
 
@@ -201,7 +203,9 @@ h2, h3, .button{
 	margin-top: 50px !important;
 }
 
-
+.services ~ .cta{
+	padding: ($breathspace*.75) 0 ($breathspace*.5) 0;
+}
 
 /** process **/
 .process{
@@ -226,6 +230,8 @@ h2, h3, .button{
 	@include center(100%);
 	@extend %casestudylink;
 }
+
+
 
 /** Clients **/
 .clients h2{
@@ -303,8 +309,11 @@ blockquote{
 .cta{
 	@include center($width);
 	background-color: white;
-	padding: 100px 0;
 	text-align: center;
+}
+
+.testimonial ~ .cta{
+	padding: ($breathspace*1.5) 0;
 }
 
 .biglink{
