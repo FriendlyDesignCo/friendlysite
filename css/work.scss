@@ -26,6 +26,7 @@
 	& img{
 		width: 100%;
 		@extend %casestudylink;
+		max-width: 270px;
 	}
 }
 

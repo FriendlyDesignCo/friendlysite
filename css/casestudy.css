@@ -80,7 +80,8 @@
   .caseimages a:last-child {
     margin-right: 0%; }
   .caseimages a img {
-    width: 100%; }
+    width: 100%;
+    max-width: 270px; }
 
 .threeup {
   overflow: auto; }
