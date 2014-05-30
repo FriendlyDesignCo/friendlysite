@@ -9,9 +9,12 @@
 
 	/* stacks and adds padding to 2nd and 3rd children */ 
 	
+	.service, .processphoto {
+		text-align: center;
+	}
+
 	.service, .processphoto, .colophon .column {
 		@include stack();
-		text-align: center;
 		&:nth-of-type(2), &:nth-of-type(3){
 			padding-top: 50px;
 		}
