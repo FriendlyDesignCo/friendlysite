@@ -12,6 +12,20 @@ The Typing Animation comes from Matt Boldt's [Typed.js](..mattboldt/typed.js/). 
 ###SASS
 All of the CSS is written in [SASS](http://sass-lang.com/) using the SCSS syntax (Sassy CSS). As tempting as it may be to just open up the CSS file and drop some changes, doing so will make the source files difficult to maintain. So whenever you need to change the stylesheet do it in SASS.
 
+###bLazy.js
+[bLazy.js](..dinbror/blazy) allows the images on the site to have a lazy load, eg they load when visible in the viewport, it was created by[Bjørn Klinggaard](http://dinbror.dk/). It's very easy to implement.
+
+Let's say your `img` tag normally looks like this:
+
+```
+<img src="images/yourcontent.png"/>
+```
+To enable lazy loading simply add a class of `b-lazy`, place your content in a `data-src` attribute and put your placeholder/loading image in the `src` attribute. *(You also need make sure the script is included and called in the html, but that should go without saying)*
+```
+<img class="b-lazy" data-src="images/yourcontent.png" src="images/loading.jpg"/>
+```
+And that's it. The animation transition is housed in the `settings.scss`.
+
 ##Best Practices
 
 ###SASS
