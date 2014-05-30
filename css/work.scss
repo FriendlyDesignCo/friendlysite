@@ -10,6 +10,7 @@
 .casestudies h2, .workcontainer h2{
 	@extend %proxima;
 	color: $green;
+	font-size: 2.125em;
 }
 
 .casestudies, .workcontainer{
@@ -30,7 +31,9 @@
 	}
 }
 
-
+.process{
+	margin-top: 50px;
+}
 
 //three up
 .threeup{

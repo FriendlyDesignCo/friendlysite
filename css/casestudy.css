@@ -54,7 +54,8 @@
     clear: both; }
 
 .casestudies h2, .workcontainer h2 {
-  color: #51b748; }
+  color: #51b748;
+  font-size: 2.125em; }
 
 .casestudies, .workcontainer {
   margin-top: 50px; }
@@ -84,6 +85,9 @@
   .caseimages a img {
     width: 100%;
     max-width: 270px; }
+
+.process {
+  margin-top: 50px; }
 
 .threeup {
   overflow: auto; }
