@@ -67,9 +67,10 @@ a {
   position: relative;
   top: 0;
   left: 0;
-  transition: all 0.25s; }
+  transition: all 0.25s;
+  box-shadow: 0 3px 0  0 white; }
   .button:hover {
-    box-shadow: 0 3px 0 #00733b;
+    box-shadow: 0 3px 0 0 #00733b;
     background-color: #51b748; }
 
 /* Multi Selectors*/
