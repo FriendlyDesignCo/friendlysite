@@ -69,11 +69,12 @@
   color: #51b748;
   font-size: 2.125em; }
 
-.casestudies, .workcontainer {
-  margin-top: 50px; }
+.process + .workcontainer {
+  margin-top: 80px;
+  margin-bottom: 30px; }
 
-.workcontainer {
-  margin-bottom: 50px; }
+.workcontainer ~ .workcontainer {
+  margin-bottom: 40px; }
 
 .caseimages a {
   *zoom: 1;
@@ -101,6 +102,11 @@
 .process {
   margin-top: 50px; }
 
+/**IMAGE GRID**/
+.threeup, .bigleft, .bigright, .bigcenter {
+  overflow: auto;
+  clear: both; }
+
 .threeup {
   overflow: auto; }
   .threeup img {
@@ -122,7 +128,7 @@
     .threeup img:last-child {
       margin-right: 0%; }
 
-.bigleft {
+.bigleft + .bigleft, .bigright + .bigleft, .threeup + .bigleft, .bigcenter + .bigleft {
   margin-top: 3.3%;
   overflow: auto; }
 
@@ -177,7 +183,7 @@
     .smallright img:last-child {
       margin-top: 10.2%; }
 
-.bigright {
+.bigleft + .bigright, .bigright + .bigright, .threeup + .bigright, .bigcenter + .bigright {
   margin-top: 3.3%;
   overflow: auto; }
 
@@ -242,13 +248,15 @@
   margin-left: auto;
   padding-left: 0;
   padding-right: 0;
-  width: 100%;
-  margin-top: 3.3%; }
+  width: 100%; }
   .bigcenter img:before, .bigcenter img:after {
     content: '';
     display: table; }
   .bigcenter img:after {
     clear: both; }
+
+.bigleft + .bigcenter, .bigright + .bigcenter, .threeup + .bigcenter, .bigcenter + .bigcenter {
+  margin-top: 3.3%; }
 
 /** ---- MEDIA QUERIES ---- **/
 @media (min-width: 600px) and (max-width: 900px) {
