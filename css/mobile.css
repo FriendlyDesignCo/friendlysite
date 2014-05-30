@@ -16,14 +16,16 @@
 @media all and (max-width: 770px) {
   /** Multi Selectors **/
   /* stacks and adds padding to 2nd and 3rd children */
+  .service, .processphoto {
+    text-align: center; }
+
   .service, .processphoto, .colophon .column {
     display: block;
     clear: both;
     float: none;
     width: 100%;
     margin-left: auto;
-    margin-right: auto;
-    text-align: center; }
+    margin-right: auto; }
     .service:first-child, .processphoto:first-child, .colophon .column:first-child {
       margin-left: auto; }
     .service:last-child, .processphoto:last-child, .colophon .column:last-child {
