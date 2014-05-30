@@ -18,9 +18,11 @@
   font-weight: 700;
   text-transform: uppercase; }
 
-.caseimages a img {
-  margin-bottom: 10px;
-  box-shadow: 0px 0px 0px 7px white, 0px 0px 0px 8px #919191; }
+.caseimages a {
+  box-shadow: 0px 0px 0px 7px white, 0px 0px 0px 8px #919191;
+  transition: all .15s; }
+  .caseimages a:hover {
+    box-shadow: 0px 0px 0px 7px white, 0px 0px 0px 10px #50B748,0px 3px 0px 10px #15683C; }
 
 .casestudies, .workcontainer {
   *zoom: 1;
