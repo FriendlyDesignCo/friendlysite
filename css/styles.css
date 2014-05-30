@@ -215,10 +215,13 @@ h2, h3, .button {
 
 .service p {
   text-align: left; }
+.service a {
+  margin: 10px auto;
+  display: inline-block; }
 .service img {
   *zoom: 1;
   width: auto;
-  max-width: 50%;
+  max-width: 60%;
   float: none;
   display: block;
   margin-right: auto;
