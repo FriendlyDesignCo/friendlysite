@@ -207,8 +207,13 @@ h2, h3, .button{
 		text-align: left;
 	}
 
-	img{
-		@include center(50%);
+	& a{
+		margin: 10px auto;
+		display: inline-block;
+	}
+
+	& img{
+		@include center(60%);
 		box-sizing: border-box;
 	}
 }
