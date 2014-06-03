@@ -403,6 +403,9 @@
   .coverimage:after {
     clear: both; }
 
+.exposition + .cta {
+  padding: 120px 0; }
+
 /* Client Info */
 .clientinfo {
   *zoom: 1;
