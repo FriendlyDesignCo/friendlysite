@@ -10,11 +10,29 @@
 
     <title>Friendly Design Co in Washington DC</title>
     
-    <link rel="stylesheet" href="css/screen.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/mobile.css">
-     <link rel="stylesheet" href="css/tablet.css">
-    <link rel="stylesheet" href="css/xl.css">
+    <link rel="icon" type="image/x-icon" href="images/head-images/favicon.ico" />
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="images/head-images/apple-touch-icon-precomposed.png">
+    <!-- For the iPad mini and the first- and second-generation iPad on iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/head-images/apple-touch-icon-72x72-precomposed.png">
+    <!-- For the iPad mini and the first- and second-generation iPad on iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/head-images/apple-touch-icon-76x76-precomposed.png">
+    <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/head-images/apple-touch-icon-114x114-precomposed.png">
+    <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/head-images/apple-touch-icon-120x120-precomposed.png">
+    <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/head-images/apple-touch-icon-144x144-precomposed.png">
+    <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/head-images/apple-touch-icon-152x152-precomposed.png">
+
+    <link rel="stylesheet" href="../css/screen.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/mobile.css">
+    <link rel="stylesheet" href="../css/tablet.css">
+    <link rel="stylesheet" href="../css/xl.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../css/casestudy.css">
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
@@ -27,7 +45,7 @@
         } catch (e) {}
         </script>
 
-        <script src="js/jquery.js"></script>
+        <script src="../js/jquery.js"></script>
 
     </head>
     <body class="">
@@ -38,7 +56,7 @@
                     <legend>Sign up for some friendly news:</legend>
                     <fieldset>
                         <input type="text" name="EMAIL" placeholder="Your email">
-                        <input type="submit" name="subscribe" value="send" class="contact-form-submit">
+                        <input type="submit" name="subscribe" value="send" class="button">
                     </fieldset>
                 </form>
                 <div id="contact-info">
@@ -72,7 +90,7 @@
                 <ul>
                     <li class="active">
                         <div class="logo" class="clearfix">
-                            <a href="index.html"><img src="images/friendly-logo-trans.svg"></a>
+                            <a href="index.html"><img  class="animated fadeInUp" data-wow-delay=".25s"  src="../images/friendly-logo-trans.svg"></a>
                         </div>
                     </li>
                     <li>
@@ -116,24 +134,25 @@
 
                     <!--services-->
                     <div class="services">
-                        <h2> Our Expertise </h2>
+                        <h2>Our Expertise</h2>
                         <div>
-                            <div class="service">
-                                <img src="images/friendly_services-brand.png">
-                                <h3>Brands & Identities</h3> 
-                                <p> Your brand is more than just a clever illustration, it’s your identity. We design unique brand marks that demand attention and make sense for your organization.</p>
-                            </div>
-                            <div class="service">
-                                <img src="images/friendly_services-apps.png">
-                                <h3>Websites & Applications</h3> 
-                                <p>Digital communications run modern businesses. Your site or app are the hub of that operation. We work with you to design user experiences that are easy to navigate and unforgettable.</p>
-                            </div>
-                            <div class="service">
-                                <img src="images/friendly_services-marketing.png">
-                                <h3>Marketing & Campaigns</h3> 
-                                <p>Your have steep competition for your customer’s attention. We engage audiences at the right moment through memorable interactions across diverse platforms.</p>
-                            </div>
-                        </div> 
+                        <div class="service">
+                            <img class="wow fadeInUp" data-wow-delay=".25s" src="../images/service-branding.svg">
+                            <h3>Brands &amp; Identities</h3> 
+                            <p> Your brand is more than just a clever illustration, it’s your identity. We design unique brand marks that demand attention and make sense for your organization.</p>
+                        </div>
+                        <div class="service">
+                            <img class="wow fadeInUp" data-wow-delay=".35s" src="../images/service-websites.svg">
+                            <h3>Websites &amp; Applications</h3> 
+                            <p>Digital communications run modern businesses. Your site or app are the hub of that operation. We work with you to design user experiences that are easy to navigate and unforgettable.</p>
+                        </div>
+                        <div class="service">
+                            <img class="wow fadeInUp" data-wow-delay=".45s" src="../images/service-campaigns.svg">
+                            <h3>Marketing &amp; Campaigns</h3> 
+                            <p>Your have steep competition for your customer’s attention. We engage audiences at the right moment through memorable interactions across diverse platforms.</p>
+                        </div>
+                    </div>
+
                     </div>
 
                     <div class="cta">
@@ -142,36 +161,36 @@
 
                     <!--process-->
                     <div class="process">
-                        <h2> Our solutions.</h2>
+                        <h2>Our solutions</h2>
                         <p>The friendly design process produces new ideas and exciting products for an array of collaborators and clients.</p>
                         <div>
                             <div class="processphoto">
-                                <img src="images/thumb-afge.png">
+                                <a href="/casestudies/afge.html"><img class="wow fadeInUp" data-wow-delay=".25s" src="../images/thumb-afge.png"></a>
                             </div>
                             <div class="processphoto">
-                                <img src="images/thumb-kogod.png">
+                                <a href="/casestudies/gamelab.html"><img class="wow fadeInUp" data-wow-delay=".35s" src="../images/thumb-gamelab.png"></a>
                             </div>
                             <div class="processphoto">
-                                <img src="images/thumb-urgently.png">
+                                <a href="/casestudies/urgently.html"><img class="wow fadeInUp" data-wow-delay=".45s" src="../images/thumb-urgently.png"></a>
                             </div>
                         </div>
                     </div>
 
                     <!--Clients-->
                     <div class="clients">
-                        <h2>Join our community of incredible clients.</h2> 
+                        <h2>Join our community of incredible clients</h2> 
                     </div>
                     <div class="clientlogos">
-                        <img src="./images/client-logos/world-bank.png">
-                        <img src="./images/client-logos/american-university.png">
-                        <img src="./images/client-logos/white-house.png">
-                        <img src="./images/client-logos/washington-post.png">
-                        <img src="./images/client-logos/aarp.png">
-                        <img src="./images/client-logos/wordpress.png">
-                        <img src="./images/client-logos/college-humor.png">
-                        <img src="./images/client-logos/hinge.png">
-                        <img src="./images/client-logos/israel-embassasy.png">
-                        <img src="./images/client-logos/childrens-hospital.png">
+                        <img class="wow fadeInUp" data-wow-delay=".5s" src="./../images/client-logos/world-bank.png">
+                        <img class="wow fadeInUp" data-wow-delay=".5s" src="./../images/client-logos/american-university.png">
+                        <img class="wow fadeInUp" data-wow-delay=".5s" src="./../images/client-logos/white-house.png">
+                        <img class="wow fadeInUp" data-wow-delay=".5s" src="./../images/client-logos/washington-post.png">
+                        <img class="wow fadeInUp" data-wow-delay=".5s" src="./../images/client-logos/aarp.png">
+                        <img class="wow fadeInUp" data-wow-delay=".5s" src="./../images/client-logos/wordpress.png">
+                        <img class="wow fadeInUp" data-wow-delay=".5s" src="./../images/client-logos/college-humor.png">
+                        <img class="wow fadeInUp" data-wow-delay=".5s" src="./../images/client-logos/hinge.png">
+                        <img class="wow fadeInUp" data-wow-delay=".5s" src="./../images/client-logos/israel-embassasy.png">
+                        <img class="wow fadeInUp" data-wow-delay=".5s" src="./../images/client-logos/childrens-hospital.png">
                     </div>
                    
 
@@ -198,7 +217,7 @@
             <div id="global-footer">
                 <div class="hr-wrap">
                     <hr>
-                    <img src="images/venn-outline-3.svg" />
+                    <img src="../images/venn-outline-3.svg" />
                     <div class="colophon">
                         <h2>Colophon</h2>
                         <div class="colophon-content">
@@ -210,7 +229,7 @@
 
                             <div class="column">
                                 <h3>Technology</h3>
-                                <p>FriendlyDesign.co is laid out using <a href="http://jeet.gs/" target="_blank">Jeet.gs</a> by MOJO Tech and styled with <a href="http://sass-lang.com/" target="_blank">SASS.</a> Fancy typing animation courtesy of Matt Boldt's <a href="http://www.mattboldt.com/demos/typed-js/" target="_blank">Typed.JS.</a> All of our issues solved courtesy of <a href="http://www.stackoverflow.com" target="_blank">Stack Overflow</a> and <a href="https://github.com/" target="_blank">GitHub</a>.</p>
+                                <p>FriendlyDesign.co is laid out using <a href="http://jeet.gs/" target="_blank">Jeet.gs</a> by MOJO Tech and styled with <a href="http://sass-lang.com/" target="_blank">SASS.</a> Fancy typing animation courtesy of Matt Boldt's <a href="http://www.mattboldt.com/demos/typed-../js/" target="_blank">Typed.JS.</a> All of our issues solved courtesy of <a href="http://www.stackoverflow.com" target="_blank">Stack Overflow</a> and <a href="https://github.com/" target="_blank">GitHub</a>.</p>
                             </div>
 
                             <div class="column">
@@ -242,8 +261,8 @@
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
     </script>
-    <script src="js/index.js"></script>
-    <script src="js/typed.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/typed.js"></script>
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -256,20 +275,23 @@
   </script>
   <script> 
         // window.setInterval(function(){
-            $('.hero-container').css('background-image','url(./images/phone.png)');
+            $('.hero-container').css('background-image','url(../images/phone.png)');
             window.setTimeout(function(){
-                $('.hero-container').css('background-image','url(./images/imac-2.png)');
+                $('.hero-container').css('background-image','url(../images/imac-2.png)');
             },4000);
             window.setTimeout(function(){
-                $('.hero-container').css('background-image','url(./images/imac.png)');
+                $('.hero-container').css('background-image','url(../images/imac.png)');
             },8000);
             window.setTimeout(function(){
-                $('.hero-container').css('background-image','url(./images/phone-2.png)');
+                $('.hero-container').css('background-image','url(../images/phone-2.png)');
             },12000);
 
         // },4000);
 </script>
-
+<script src="../js/wow.js"></script>
+<script>
+ new WOW().init();
+</script>
 <!--typefade script -->
        <!--<script type="text/javascript">
         var text = ['Sites.', 'Apps.', 'Brands.'];

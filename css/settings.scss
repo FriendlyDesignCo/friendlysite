@@ -17,7 +17,7 @@ $break-large: 900px;
 $break-tablet: 770px;
 $break-small: 600px;
 
-$breathspace: 150px;
+$breathspace: 80px;
 
 
 $rightspace: 2em;
@@ -25,3 +25,47 @@ $rightspace: 2em;
 
 $buttonsize:5px;
 
+/* Extends */
+
+%proxima{
+	font-family: "proxima-nova", "helvetica neue", helvetica, arial, sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+%chaparal{
+	font-family: "ff-tisa-web-pro", "Chaparal Pro", Garamond, Georgia, Serif;
+	font-weight: normal;
+	
+}
+
+%fullwidth {
+	 min-height: 100%; /* Set to minimum height so overflow doesn't get hidden */
+    overflow-y: hidden;	position: relative;
+	width: 100%;
+	float: left;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;
+}
+
+%casestudylink{
+	box-shadow: 0px 0px 0px 7px white, 0px 0px 0px 8px #919191;
+	transition: all .15s;
+	&:hover{
+		box-shadow: 0px 0px 0px 7px white, 0px 0px 0px 10px #50B748,0px 3px 0px 10px #15683C;
+	}
+} 
+
+/*This Controls the lazy load tranisition animation*/
+.b-lazy {
+    -webkit-transition: opacity 1000ms ease-in-out;
+       -moz-transition: opacity 1000ms ease-in-out;
+         -o-transition: opacity 1000ms ease-in-out;
+            transition: opacity 1000ms ease-in-out;
+             max-width: 100%;
+               opacity: 0;
+}
+.b-lazy.b-loaded {
+               opacity: 1;
+}

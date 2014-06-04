@@ -1,29 +1,6 @@
 @import 'jeet/index';
 @import 'settings';
 
-/* Extends */
-
-%proxima{
-	font-family: "proxima-nova", "helvetica neue", helvetica, arial, sans-serif;
-	font-weight: 700;
-	text-transform: uppercase;
-}
-
-%chaparal{
-	font-family: "ff-tisa-web-pro", "Chaparal Pro", Garamond, Georgia, Serif;
-	font-weight: normal;
-	
-}
-
-%fullwidth {
-	 min-height: 100%; /* Set to minimum height so overflow doesn't get hidden */
-    overflow-y: hidden;	position: relative;
-	width: 100%;
-	float: left;
-	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
-	box-sizing: border-box;
-}
 
 .casestudies, .workcontainer{
 	@include center($width);
@@ -33,23 +10,40 @@
 .casestudies h2, .workcontainer h2{
 	@extend %proxima;
 	color: $green;
+	font-size: 2.125em;
 }
 
-.casestudies, .workcontainer{
-	margin-top: 50px;
+.process + .workcontainer{
+	margin-top: 80px;
+	margin-bottom: 30px;
 }
 
-.workcontainer{
-	margin-bottom: 50px;
+.workcontainer ~ .workcontainer{
+	margin-bottom: 40px;
 }
+
 
 .caseimages a{
 	@include col(1/3);
 	overflow: auto;
+	@extend %casestudylink;
 	& img{
 		width: 100%;
+		max-width: 270px;
 	}
 }
+
+.process{
+	margin-top: 50px;
+}
+
+
+/**IMAGE GRID**/
+.threeup, .bigleft, .bigright, .bigcenter{
+	overflow: auto;
+	clear: both;
+}
+
 //three up
 .threeup{
 	overflow: auto;
@@ -59,7 +53,7 @@
 }
 
 //bigleft
-.bigleft{
+.bigleft + .bigleft, .bigright + .bigleft, .threeup + .bigleft, .bigcenter + .bigleft{
 	margin-top: 3.3%;
 	overflow: auto;
 }
@@ -78,7 +72,7 @@
 }
 
 //bigright
-.bigright{
+.bigleft + .bigright, .bigright + .bigright, .threeup + .bigright, .bigcenter + .bigright{
 	margin-top: 3.3%;
 	overflow: auto;
 }
@@ -100,9 +94,12 @@
 .bigcenter img{
 	@include center(100%);
 	width: 100%;
-	margin-top: 3.3%;
+
 }
 
+.bigleft + .bigcenter, .bigright + .bigcenter, .threeup + .bigcenter, .bigcenter + .bigcenter{
+	margin-top: 3.3%;
+}
 
 /** ---- MEDIA QUERIES ---- **/
 //tablet media query

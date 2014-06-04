@@ -39,7 +39,7 @@
                     <legend>Sign up for some friendly news:</legend>
                     <fieldset>
                         <input type="text" name="EMAIL" placeholder="Your email">
-                        <input type="submit" name="subscribe" value="send" class="contact-form-submit">
+                        <input type="submit" name="subscribe" value="send" class="button">
                     </fieldset>
                 </form>
                 <div id="contact-info">
@@ -98,38 +98,66 @@
                 <div class="page page--homepage page-coverup" id="page-portfolio">
                     <!--Content goes here-->
                      
-                    <div class="casestudies">
+                    <div class="process">
                         <h2>Case Studies</h2>
-                        <div class="caseimages">
-                            <a href="casestudy.html"><img src="http://placekitten.com/323/200"></a>
-                            <a href="casestudy.html"><img src="http://placekitten.com/323/200"></a>
-                            <a href="casestudy.html"><img src="http://placekitten.com/323/200"></a>
+                        <div>
+                            <div class="processphoto">
+                                <a href="/casestudies/afge.html"> <img class="b-lazy" data-src="images/thumb-afge.png" src="images/loading.jpg"/> </a>
+                            </div>
+                            <div class="processphoto">
+                                <a href="/casestudies/gamelab.html"><img class="b-lazy" data-src="images/thumb-gamelab.png" src="images/loading.jpg"/></a>
+                            </div>
+                            <div class="processphoto">
+                                <a href="/casestudies/urgently.html"><img class="b-lazy" data-src="images/thumb-urgently.png" src="images/loading.jpg"/></a>
+                            </div>
+                            <div class="processphoto">
+                                <a href="/casestudies/kogod.html"><img class="b-lazy" data-src="images/thumb-kogod.png" src="images/loading.jpg"/></a>
+                            </div>
                         </div>
                     </div>
                     <div class="workcontainer">
                         <h2>Additional Work</h2>
                         <div class="threeup">
-                            <img src="http://placekitten.com/323/200">
-                            <img src="http://placekitten.com/323/200">
-                            <img src="http://placekitten.com/323/200">
+                            <img class="b-lazy" data-src="http://placekitten.com/323/200" src="images/loading.jpg">
+                            <img class="b-lazy" data-src="http://placekitten.com/323/200" src="images/loading.jpg">
+                            <img class="b-lazy" data-src="http://placekitten.com/323/200" src="images/loading.jpg">
                         </div>
                         <div class="bigleft">
-                            <img src="http://placekitten.com/323/200">
+                            <img class="b-lazy" data-src="http://placekitten.com/323/200" src="images/loading.jpg">
                             <div class="smallright">
-                                <img src="http://placekitten.com/323/200">
-                                <img src="http://placekitten.com/323/200">
+                                <img class="b-lazy" data-src="http://placekitten.com/323/200" src="images/loading.jpg">
+                                <img class="b-lazy" data-src="http://placekitten.com/323/200" src="images/loading.jpg">
                             </div>
                         </div>
+                        <h3>KOGOD</h2>
+                    </div>
+                    
+                    <div class="workcontainer">
                         <div class="bigright">
                             <div class="smallleft">
-                                <img src="http://placekitten.com/323/200">
-                                <img src="http://placekitten.com/323/200">
+                                <img class="b-lazy" data-src="http://placekitten.com/323/200" src="images/loading.jpg">
+                                <img class="b-lazy" data-src="http://placekitten.com/323/200" src="images/loading.jpg">
                             </div>
-                            <img src="http://placekitten.com/323/200">
+                            <img class="b-lazy" data-src="http://placekitten.com/323/200" src="images/loading.jpg">
                         </div>
                         <div class="bigcenter">
-                            <img src="http://placekitten.com/323/200">
+                            <img class="b-lazy" data-src="http://placekitten.com/323/200" src="images/loading.jpg">
                         </div>
+                        <h3>KOGOD</h2>
+                    </div>
+
+                    <div class="workcontainer">
+                        <div class="bigright">
+                            <div class="smallleft">
+                                <img class="b-lazy" data-src="http://placekitten.com/323/200" src="images/loading.jpg">
+                                <img class="b-lazy" data-src="http://placekitten.com/323/200" src="images/loading.jpg">
+                            </div>
+                            <img class="b-lazy" data-src="http://placekitten.com/323/200" src="images/loading.jpg">
+                        </div>
+                        <div class="bigcenter">
+                            <img class="b-lazy" data-src="http://placekitten.com/323/200" src="images/loading.jpg">
+                        </div>
+                        <h3>KOGOD</h2>
                     </div>
                     <!--End content-->     
                 </div>
@@ -183,7 +211,16 @@
         </footer>
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+   
+    <script type="text/javascript" src="js/lazy.js"></script>
+    <script>
+        var bLazy = new Blazy({
+          success: function(){
+            updateCounter();
+          }
+        });
     </script>
+
     <script src="js/index.js"></script>
     <script src="js/typed.js"></script>
     <script>
