@@ -15,7 +15,7 @@
 
 	.service, .processphoto, .colophon .column {
 		@include stack();
-		&:nth-of-type(2), &:nth-of-type(3){
+		&:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4){
 			padding-top: 50px;
 		}
 	}

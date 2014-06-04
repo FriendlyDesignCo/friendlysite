@@ -43,7 +43,7 @@
       margin-left: auto; }
     .service:last-child, .processphoto:last-child, .colophon .column:last-child {
       margin-right: auto; }
-    .service:nth-of-type(2), .service:nth-of-type(3), .processphoto:nth-of-type(2), .processphoto:nth-of-type(3), .colophon .column:nth-of-type(2), .colophon .column:nth-of-type(3) {
+    .service:nth-of-type(2), .service:nth-of-type(3), .service:nth-of-type(4), .processphoto:nth-of-type(2), .processphoto:nth-of-type(3), .processphoto:nth-of-type(4), .colophon .column:nth-of-type(2), .colophon .column:nth-of-type(3), .colophon .column:nth-of-type(4) {
       padding-top: 50px; }
 
   .services, .process, .clients, .testimonial {
