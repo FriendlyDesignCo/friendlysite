@@ -8,7 +8,7 @@
 </div>
 <div class="exposition">
     <div class="expo-text">
-        <h2>Push Play</h2>
+        <h2>Local</h2>
         <p>The American Federation of Government Employees (AFGE) is the largest federal employee union in the United States, representing more than a quarter million members. AFGE had a goal to improve their outdated and cumbersome extranet system. They needed to make it easier for leaders to manage their Local (or chapter) membership rolls and collect better information about their members.</p>
     </div>
     
