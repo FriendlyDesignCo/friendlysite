@@ -30,7 +30,20 @@
 	}
 }
 
-.aboutsocial{
+.about-social{
+	a{
+		font-size: 2.375em;
+		color: $green;
+		text-decoration: none;
+		span{
+		border: 1px solid $green;
+		border-radius: 50%;
+			&:hover{
+				opacity: 0.7;
+			}
+		}
+	}
+
 	& .icon-tumblr:before {
 		content: "\26";
 	}
@@ -128,7 +141,8 @@
 	}
 }
 
-.aboutsocial{
+.about-social{
+
 	& .icon-tumblr:before {
 		content: "\26";
 	}

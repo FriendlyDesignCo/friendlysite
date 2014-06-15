@@ -102,7 +102,16 @@
       font-weight: bold;
       color: #51b748; }
 
-.aboutsocial .icon-tumblr:before {
+.about-social a {
+  font-size: 2.375em;
+  color: #51b748;
+  text-decoration: none; }
+  .about-social a span {
+    border: 1px solid #51b748;
+    border-radius: 50%; }
+    .about-social a span:hover {
+      opacity: 0.7; }
+.about-social .icon-tumblr:before {
   content: "\26"; }
 
 @media (min-width: 770px) and (max-width: 900px) {
@@ -283,5 +292,5 @@
       .aboutfriendly .abouttext:last-child {
         margin-right: auto; }
 
-  .aboutsocial .icon-tumblr:before {
+  .about-social .icon-tumblr:before {
     content: "\26"; } }
