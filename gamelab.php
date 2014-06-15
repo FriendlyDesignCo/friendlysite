@@ -9,11 +9,41 @@
 <div class="exposition">
     <div class="expo-text">
         <h2>Push Play</h2>
-        <p>
-            American University (AU) approached us to help shape a new initiative. They were launching a Master of Arts in Game Design degree program alongside a game production studio within the university. The degree is the only program in persuasive play in the United States. Their studio works with clients to develop games that will engage and influence specific audiences.
-            <br><br>
-            Our challenge was to brand and launch the new entity. We collaborated with a cross-discipline AU team; guiding them from naming the organization to creating unique brand assets, and then designing and launching a noteworthy website.
-        </p>
+        <p>American University (AU) had a vision to create a degree program Game Design alongside a game production studio. The Master of Arts degree would be the only program in persuasive play in the United States, while the studio would work with outside clients to develop games that engage and influence diverse audiences.</p>
+        <p>Friendly’s challenge was to help brand and launch the new entity in six weeks. </p>
+        <p>Collaborating with a cross-discipline AU team; we guided through naming the organization to creating distinctive brand assets, and finally designing and launching a playing and engaging website.</p>
+        
+    </div>
+
+    <div class="expo-photos">
+        <!-- <div class="threeup">
+            <img src="http://placekitten.com/323/200">
+            <img src="http://placekitten.com/323/200">
+            <img src="http://placekitten.com/323/200">
+        </div>-->
+        <div class="bigleft">
+            <img src="http://placekitten.com/323/200">
+            <div class="smallright">
+                <img src="http://placekitten.com/323/200">
+                <img src="http://placekitten.com/323/200">
+            </div>
+        </div>
+       <!-- <div class="bigright">
+            <div class="smallleft">
+                <img src="http://placekitten.com/323/200">
+                <img src="http://placekitten.com/323/200">
+            </div>
+            <img src="http://placekitten.com/323/200">
+        </div>
+        <div class="bigcenter">
+            <img src="http://placekitten.com/323/200">
+        </div> -->
+    </div>
+
+    <div class="expo-text">
+        <p>Our team explored over a hundred name combinations before deciding on Game Lab to represent the initiative’s unique position as an academic degree, that also operates as an independent game design studio. Once the name was established, we built a visual identity that extended the language into a cohesive design. The result combined the GL initials into a monogram maze that was bold, eye catching, and evocative one of the most basic elements behind games.</p>
+        <p>With brand direction in place, we turned our attention to the website. We worked to accentuate the bifurcated nature of Game Lab, its two primary components with a site that felt inherently split. Panels slide as users dive deeper into content, creating a mobile app-like experience. Throughout the build process, our team designed additional brand elements, including an elaborate maze illustration to add a unique texture to the site. </p>
+        
     </div>
     <div class="expo-photos">
         <!-- <div class="threeup">
@@ -40,33 +70,35 @@
         </div> -->
     </div>
     <div class="expo-text">
-        <p>
-          We explored over a hundred name combinations before deciding on, "Game Lab," to represent the initiative’s unique position as an academic unit that also creates original work.We then put equal effort into designing a visual identity. Our result combined the GL initials into a monogram maze that was bold, eye catching, and evocative of a diverse range of games.  
-        </p>
+        <p>The website was an integral part of Game Lab’s official launch, and is now a successful vehicle for drawing clients to the studio and attracting new students to the program.</p>
     </div>
     <div class="expo-photos">
-        <div class="threeup">
+        <!-- <div class="threeup">
             <img src="http://placekitten.com/323/200">
             <img src="http://placekitten.com/323/200">
+            <img src="http://placekitten.com/323/200">
+        </div>-->
+        <div class="bigleft">
+            <img src="http://placekitten.com/323/200">
+            <div class="smallright">
+                <img src="http://placekitten.com/323/200">
+                <img src="http://placekitten.com/323/200">
+            </div>
+        </div>
+       <!-- <div class="bigright">
+            <div class="smallleft">
+                <img src="http://placekitten.com/323/200">
+                <img src="http://placekitten.com/323/200">
+            </div>
             <img src="http://placekitten.com/323/200">
         </div>
-    </div>
-    <div class="expo-text two-col">
-        <p>
-            With brand direction in place, we turned our attention to create a fun and unique. We built off the bifurcated nature of the Game Lab; its two primary components, and designed a site that felt inherently split. Visual element block slip the page horizontally, and the navigation extends to either side of the screen depending on if visitors want more information about academics, or the studio. We wanted the site to feel game-like. Panels slide as users dive deeper into content, creating an app-like experience. As we built the site we continued to expand the brand, illustrating a maze pattern and designing visual relationships between the Game Lab, AU, and AU’s website. 
-        </p>
-    </div>
-    <div class="expo-photos">
         <div class="bigcenter">
-            <img src="images/casestudies/gamelab/gamelab-laptop-phone.jpg">
-        </div>
+            <img src="http://placekitten.com/323/200">
+        </div> -->
     </div>
-    <div class="expo-text">
-        <p> We worked diligently with AU’s Office of Information and Technology who built the final, fully-responsive site. We are thrilled to see it help attract new students to the program, and launch this exciting venture.
-        </p>
-    </div>
+    
 </div>
-    <!--CTA-->
+<!--CTA-->
 <div class="cta">
     <a class="biglink button" href="mailto:someone@friendlydesign.co?Subject=Let's%20work%togther." target="_top">Let’s Work Together</a> 
 </div>  
