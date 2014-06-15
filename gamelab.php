@@ -16,19 +16,19 @@
     </div>
 
     <div class="expo-photos">
-        <!-- <div class="threeup">
-            <img src="http://placekitten.com/323/200">
-            <img src="http://placekitten.com/323/200">
-            <img src="http://placekitten.com/323/200">
-        </div>-->
-        <div class="bigleft">
+        <div class="threeup">
+            <img src="images/casestudies/gamelab/gamelab-sketch01.jpg">
+            <img src="images/casestudies/gamelab/gamelab-sketch02.jpg">
+            <img src="images/casestudies/gamelab/gamelab-sketch03.jpg">
+        </div>
+        <!-- <div class="bigleft">
             <img src="http://placekitten.com/323/200">
             <div class="smallright">
                 <img src="http://placekitten.com/323/200">
                 <img src="http://placekitten.com/323/200">
             </div>
         </div>
-       <!-- <div class="bigright">
+       <div class="bigright">
             <div class="smallleft">
                 <img src="http://placekitten.com/323/200">
                 <img src="http://placekitten.com/323/200">
@@ -42,9 +42,7 @@
 
     <div class="expo-text">
         <p>Our team explored over a hundred name combinations before deciding on Game Lab to represent the initiative’s unique position as an academic degree, that also operates as an independent game design studio. Once the name was established, we built a visual identity that extended the language into a cohesive design. The result combined the GL initials into a monogram maze that was bold, eye catching, and evocative one of the most basic elements behind games.</p>
-        <p>With brand direction in place, we turned our attention to the website. We worked to accentuate the bifurcated nature of Game Lab, its two primary components with a site that felt inherently split. Panels slide as users dive deeper into content, creating a mobile app-like experience. Throughout the build process, our team designed additional brand elements, including an elaborate maze illustration to add a unique texture to the site. </p>
-        
-    </div>
+        </div>
     <div class="expo-photos">
         <!-- <div class="threeup">
             <img src="http://placekitten.com/323/200">
@@ -52,10 +50,15 @@
             <img src="http://placekitten.com/323/200">
         </div>-->
         <div class="bigleft">
-            <img src="http://placekitten.com/323/200">
+
+
+
+
+
+            <img src="images/casestudies/gamelab/gamelab-logo.jpg">
             <div class="smallright">
-                <img src="http://placekitten.com/323/200">
-                <img src="http://placekitten.com/323/200">
+            <img src="images/casestudies/gamelab/gamelab-pattern.jpg">
+            <img src="images/casestudies/gamelab/gamelab-swatches.jpg">
             </div>
         </div>
        <!-- <div class="bigright">
@@ -70,6 +73,9 @@
         </div> -->
     </div>
     <div class="expo-text">
+        <p>With brand direction in place, we turned our attention to the website. We worked to accentuate the bifurcated nature of Game Lab, its two primary components with a site that felt inherently split. Panels slide as users dive deeper into content, creating a mobile app-like experience. Throughout the build process, our team designed additional brand elements, including an elaborate maze illustration to add a unique texture to the site. </p>
+        
+ 
         <p>The website was an integral part of Game Lab’s official launch, and is now a successful vehicle for drawing clients to the studio and attracting new students to the program.</p>
     </div>
     <div class="expo-photos">
@@ -77,7 +83,7 @@
             <img src="http://placekitten.com/323/200">
             <img src="http://placekitten.com/323/200">
             <img src="http://placekitten.com/323/200">
-        </div>-->
+        </div>
         <div class="bigleft">
             <img src="http://placekitten.com/323/200">
             <div class="smallright">
@@ -85,16 +91,16 @@
                 <img src="http://placekitten.com/323/200">
             </div>
         </div>
-       <!-- <div class="bigright">
+       <div class="bigright">
             <div class="smallleft">
                 <img src="http://placekitten.com/323/200">
                 <img src="http://placekitten.com/323/200">
             </div>
             <img src="http://placekitten.com/323/200">
-        </div>
+        </div>-->
         <div class="bigcenter">
-            <img src="http://placekitten.com/323/200">
-        </div> -->
+            <img src="images/casestudies/gamelab/gamelab-desktop-phone.jpg">
+        </div>
     </div>
     
 </div>
