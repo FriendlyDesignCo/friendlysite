@@ -449,8 +449,8 @@ h1 {
 
 @font-face {
   font-family: 'icomoon';
-  src: url('../fonts/icomoon.eot');
-  src: url('../fonts/icomoon.eot?#iefix') format("embedded-opentype"), url('../fonts/icomoon.woff') format("woff"), url('../fonts/icomoon.ttf') format("truetype"), url('../fonts/icomoon.svg#icomoon') format("svg");
+  src: url('../icons/icomoon.eot');
+  src: url('../icons/icomoon.eot?#iefix') format("embedded-opentype"), url('../icons/icomoon.woff') format("woff"), url('../icons/icomoon.ttf') format("truetype"), url('../icons/icomoon.svg#icomoon') format("svg");
   font-weight: normal;
   font-style: normal;
 }
