@@ -27,6 +27,10 @@
 
 /*** Both mobile and small breakpoints ***/
 @media all and (max-width: 770px) {
+  /* Even out padding/margin on sides for tablet. */
+  .services, .colophon-content {
+    width: 92.5%; }
+
   /** Multi Selectors **/
   /* stacks and adds padding to 2nd and 3rd children */
   .service, .processphoto {
@@ -259,3 +263,5 @@
       flex-basis: 100%; }
       #main-navigation li:first-child .logo img {
         margin-left: 0px; } }
+
+/*# sourceMappingURL=mobile.css.map */

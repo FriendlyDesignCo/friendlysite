@@ -39,7 +39,7 @@
 .process, .workcontainer {
   *zoom: 1;
   width: auto;
-  max-width: 75%;
+  max-width: 80%;
   float: none;
   display: block;
   margin-right: auto;
@@ -262,7 +262,7 @@
   margin-top: 3.3%; }
 
 /** ---- MEDIA QUERIES ---- **/
-@media (min-width: 600px) and (max-width: 900px) {
+@media (min-width: 600px) and (max-width: 1000px) {
   .process, .workcontainer {
     *zoom: 1;
     width: auto;
@@ -425,3 +425,5 @@
 
   .caseimages:not(:nth-child(-n+3)) {
     padding-top: 0px; } }
+
+/*# sourceMappingURL=work.css.map */

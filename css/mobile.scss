@@ -4,6 +4,11 @@
 /*** Both mobile and small breakpoints ***/
 
 @media all and (max-width: $break-tablet){
+	
+	/* Even out padding/margin on sides for tablet. */
+	.services, .colophon-content{
+		width: $tablet-width;
+	}
 
 	/** Multi Selectors **/ 
 

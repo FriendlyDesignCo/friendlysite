@@ -6,7 +6,8 @@
 
 	.motto:first-child, .services, .process{
 	
-		@include center($tablet-width)
+		@include center($tablet-width);
+		
 
 	}
 

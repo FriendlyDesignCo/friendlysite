@@ -42,7 +42,12 @@
 
 /* body styles */
 * {
-  z-index: 4; }
+  z-index: 4;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box; }
 
 .page {
   -webkit-transition: all 0.2s ease-in-out;
@@ -55,10 +60,10 @@
   overflow: hidden; }
 
 body {
-  color: #3b4a53; }
+  color: #3B4A53; }
 
 a {
-  color: #2993d1; }
+  color: #2993D1; }
 
 #main-navigation {
   margin-top: 0px;
@@ -75,7 +80,7 @@ a {
   width: auto !important;
   border: none !important;
   padding: 2.5% 5% !important;
-  background-color: #2993d1;
+  background-color: #2993D1;
   color: #fff !important;
   text-decoration: none;
   -webkit-box-sizing: border-box;
@@ -90,7 +95,7 @@ a {
   transition: all 0.25s;
   box-shadow: 0 3px 0  0 white; }
   .button:hover {
-    box-shadow: 0 3px 0 0 #00733b !important;
+    box-shadow: 0 3px 0 0 #00733B !important;
     background-color: #51b748 !important; }
 
 /* Multi Selectors*/
@@ -115,7 +120,7 @@ h2, h3, .button {
 
 /** Hero  **/
 .hero-container-container {
-  background: linear-gradient(to top, #51b748, #51b748 50px, white 50px, white);
+  background: linear-gradient(to top, #51b748, #51b748 50px, #fff 50px, #fff);
   background-size: 100%, 50%; }
 
 .hero-container {
@@ -131,7 +136,7 @@ h2, h3, .button {
 .hero:first-child {
   *zoom: 1;
   width: auto;
-  max-width: 75%;
+  max-width: 80%;
   float: none;
   display: block;
   margin-right: auto;
@@ -175,7 +180,7 @@ h2, h3, .button {
 .noun {
   font-size: 9rem;
   font-size: 12vw;
-  color: #2993d1;
+  color: #2993D1;
   margin: -40px 0 0 0;
   margin: -3vw 0 0 0;
   padding-bottom: 10px; }
@@ -192,7 +197,7 @@ h2, h3, .button {
   padding-left: 0;
   padding-right: 0;
   background-color: #51b748;
-  padding: 20px 12.5% 60px 12.5%; }
+  padding: 20px 10% 60px 10%; }
   .motto:before, .motto:after {
     content: '';
     display: table; }
@@ -205,7 +210,7 @@ h2, h3, .button {
 /** Serices **/
 .services {
   margin-top: 80px;
-  width: 75%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   display: table; }
@@ -279,7 +284,7 @@ h2, h3, .button {
 /** process **/
 .process {
   margin-top: 80px;
-  width: 75%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   display: table; }
@@ -327,7 +332,7 @@ h2, h3, .button {
 .clients {
   *zoom: 1;
   width: auto;
-  max-width: 75%;
+  max-width: 80%;
   float: none;
   display: block;
   margin-right: auto;
@@ -437,18 +442,18 @@ blockquote {
 
 .via .who {
   font-size: 1.75em;
-  color: #00733b; }
+  color: #00733B; }
 
 .via .where {
   font-size: 1.25em;
-  color: #00733b;
+  color: #00733B;
   margin: -20px auto 0; }
 
 /*CTA*/
 .cta {
   *zoom: 1;
   width: auto;
-  max-width: 75%;
+  max-width: 80%;
   float: none;
   display: block;
   margin-right: auto;
@@ -481,13 +486,14 @@ footer {
     transition: 0.25s all; }
 
 #global-footer {
-  max-width: 1200px;
-  margin: 0 auto; }
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0px 20px 20px 20px; }
   #global-footer p {
     font-weight: normal;
     text-transform: none; }
   #global-footer a {
-    color: #00733b; }
+    color: #00733B; }
   #global-footerhover {
     color: white; }
 
@@ -500,9 +506,7 @@ footer {
   margin-right: auto;
   margin-left: auto;
   padding-left: 0;
-  padding-right: 0;
-  max-width: 1240px;
-  padding: 0px 20px 20px 20px; }
+  padding-right: 0; }
   .hr-wrap:before, .hr-wrap:after {
     content: '';
     display: table; }
@@ -534,10 +538,17 @@ footer {
   border-left: none;
   margin: 50px auto 10px auto; }
 
+.colophon-content {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: table; }
+
 .colophon {
-  color: #00733b; }
+  color: #00733B; }
 
 .colophon .column {
+  margin-top: 1em;
   *zoom: 1;
   float: left;
   display: inline;
@@ -556,9 +567,11 @@ footer {
   .colophon .column:nth-child(3n) {
     margin-right: 0%;
     float: right; }
+  .colophon .column p {
+    font-size: 0.9em; }
 
 .footer-meta {
-  background-color: #00733b;
+  background-color: #00733B;
   color: #51b748;
   padding: 10px 32px;
   *zoom: 1;
@@ -585,7 +598,7 @@ footer {
     margin-left: auto;
     padding-left: 0;
     padding-right: 0;
-    max-width: 1200px;
+    max-width: 1240px;
     padding: 0px 20px 0px 20px; }
     .footer-meta .inner:before, .footer-meta .inner:after {
       content: '';
@@ -606,3 +619,5 @@ footer {
     color: #51b748;
     text-decoration: none;
     margin-right: 20px; }
+
+/*# sourceMappingURL=styles.css.map */

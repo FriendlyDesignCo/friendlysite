@@ -7,7 +7,7 @@
                     <hr>
                     <img src="images/venn-outline-3.svg" />
                     <div class="colophon">
-                        <h2>Colophon</h2>
+                        <!-- <h2>Colophon</h2> -->
                         <div class="colophon-content">
 
                             <div class="column">

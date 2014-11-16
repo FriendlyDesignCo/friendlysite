@@ -25,7 +25,7 @@
 .b-lazy.b-loaded {
   opacity: 1; }
 
-@media all and (min-width: 770px) and (max-width: 900px) {
+@media all and (min-width: 770px) and (max-width: 1000px) {
   .motto:first-child, .services, .process {
     *zoom: 1;
     width: auto;
@@ -72,3 +72,5 @@
       float: right; }
   .clientlogos img:last-child {
     display: none; } }
+
+/*# sourceMappingURL=tablet.css.map */

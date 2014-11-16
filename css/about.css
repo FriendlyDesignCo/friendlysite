@@ -28,7 +28,7 @@
 .aboutfriendly {
   *zoom: 1;
   width: auto;
-  max-width: 75%;
+  max-width: 80%;
   float: none;
   display: block;
   margin-right: auto;
@@ -114,7 +114,7 @@
 .about-social .icon-tumblr:before {
   content: "\26"; }
 
-@media (min-width: 770px) and (max-width: 900px) {
+@media (min-width: 770px) and (max-width: 1000px) {
   .aboutfriendly {
     *zoom: 1;
     width: auto;
@@ -294,3 +294,5 @@
 
   .about-social .icon-tumblr:before {
     content: "\26"; } }
+
+/*# sourceMappingURL=about.css.map */
